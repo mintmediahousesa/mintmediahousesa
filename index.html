@@ -7,7 +7,129 @@
   <meta name="description" content="Mint Media House helps South African job seekers and SMMEs with CV revamps, job applications, branding, business services and digital marketing support." />
   <meta name="theme-color" content="#57e0a3" />
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMDUwNTA1Ii8+PGNpcmNsZSBjeD0iOTYiIGN5PSIyNiIgcj0iNDQiIGZpbGw9IiM1N2UwYTMiIG9wYWNpdHk9Ii4xOCIvPjx0ZXh0IHg9IjE3IiB5PSI3OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjQyIiBmaWxsPSIjZmZmIj5NTTwvdGV4dD48dGV4dCB4PSI3OCIgeT0iNzgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSI0MiIgZmlsbD0iIzU3ZTBhMyI+SDwvdGV4dD48L3N2Zz4=" type="image/svg+xml" />
-  <style>
+  <style>:root{
+  --bg:var(--bg)
+  --bg-soft:#0a0a0a;
+  --card:#101010;
+  --card-2:var(--card-2)
+
+  var(--mint)
+  --mint-dark:#0f3d2e;
+  --mint-soft:var(--text)
+  --mint-glow:rgba(87,224,163,.28);
+
+  --text:#f5f5f5;
+  --text-soft:#b5b5b5;
+  --text-muted:#8a8a8a;
+
+  --border:rgba(87,224,163,.14);
+
+  --shadow-soft:
+    0 0 0 1px rgba(87,224,163,.08),
+    0 10px 30px rgba(0,0,0,.45);
+
+  --shadow-glow:
+    0 0 0 1px rgba(87,224,163,.18),
+    0 0 24px rgba(87,224,163,.14),
+    0 18px 60px rgba(0,0,0,.55);
+
+  --gradient-main:
+    linear-gradient(
+      135deg,
+      #57e0a3 0%,
+      #2fb67f 45%,
+      #0f3d2e 100%
+    );
+
+  --gradient-dark:
+    linear-gradient(
+      145deg,
+      #141414 0%,
+      #0c0c0c 50%,
+      #050505 100%
+    );
+}
+
+/* GLOBAL */
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* BUTTONS */
+.btn-primary,
+.chat-btn{
+  background:var(--gradient-main);
+  color:#050505;
+  box-shadow:var(--shadow-glow);
+  border:none;
+}
+
+.btn-primary:hover,
+.chat-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(87,224,163,.28),
+    0 18px 50px rgba(0,0,0,.6);
+}
+
+/* CARDS */
+.hero-card,
+.service-card,
+.package-card,
+.process-card,
+.trust-card,
+.proof-card{
+  background:var(--gradient-dark);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-soft);
+  border-radius:22px;
+}
+
+/* HEADINGS */
+h1,h2,h3,h4{
+  color:var(--text);
+}
+
+/* GLOW TEXT */
+.fade-glow,
+.highlight,
+.logo-text span{
+  color:var(--mint);
+  text-shadow:
+    0 0 10px rgba(87,224,163,.22),
+    0 0 22px rgba(87,224,163,.12);
+}
+
+/* SECTION TITLES */
+.section-title{
+  color:var(--text);
+}
+
+/* PILLS */
+.pill{
+  border:1px solid rgba(87,224,163,.22);
+  background:rgba(87,224,163,.06);
+  color:var(--mint-soft);
+}
+
+/* LINKS */
+a{
+  color:var(--mint);
+}
+
+/* FOOTER */
+footer{
+  background:#030303;
+  border-top:1px solid rgba(87,224,163,.08);
+}
+
+/* SUBTEXT */
+p,
+.section-subtitle,
+li{
+  color:var(--text-soft);
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
