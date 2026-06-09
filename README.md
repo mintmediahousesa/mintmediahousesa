@@ -1,3 +1,1 @@
-# Mint Media House Premium Authority Upgrade
-
-Upload these files to the main branch only after backing up the current index.html. Vercel should redeploy automatically.
+Mint Media House premium logo + proposal asset upgrade. Upload all files and the assets folder to GitHub main after backup branch.
