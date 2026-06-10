@@ -121,6 +121,156 @@ nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-12px;heig
 
 /* Proof-driven final polish */
 .logo-img{width:176px!important;max-height:56px!important;object-fit:contain!important;object-position:left center!important;opacity:.82!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.32)) saturate(.9)!important}.logo-slogan{font-size:7.8px!important;letter-spacing:.18em!important;color:rgba(217,221,214,.44)!important;margin-top:-10px!important;padding-left:2px!important}header .nav{height:76px!important}.hero-logo-panel{background:radial-gradient(circle at 70% 25%,rgba(87,224,163,.07),transparent 48%),linear-gradient(145deg,rgba(255,255,255,.018),rgba(5,7,6,.72))!important;border:1px solid rgba(87,224,163,.10)!important;box-shadow:0 18px 56px rgba(0,0,0,.24)!important}.hero-logo-panel img{background:rgba(0,0,0,.12)!important;opacity:.68!important;border:1px solid rgba(87,224,163,.07)!important;padding:14px!important;border-radius:20px!important}.hero-logo-panel p{color:rgba(247,247,242,.46)!important}nav a{position:relative;transition:.22s ease}nav a:not(.wa):hover,nav a.active{color:var(--mint)!important}nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:2px;border-radius:999px;background:linear-gradient(90deg,transparent,var(--mint),transparent);opacity:.9}.proof-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.proof-metric{border:1px solid rgba(255,255,255,.09);background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(87,224,163,.025));border-radius:26px;padding:22px;min-height:140px}.proof-metric b{display:block;color:var(--mint);font-size:42px;line-height:.92;letter-spacing:-.075em;margin-bottom:14px}.proof-metric span{color:#d5dad4;font-weight:850;font-size:14px;line-height:1.35}.proof-gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:28px;align-items:stretch}.proof-panel{border:1px solid rgba(255,255,255,.10);background:linear-gradient(145deg,rgba(12,15,13,.9),rgba(4,5,4,.94));border-radius:30px;padding:22px;overflow:hidden}.proof-panel h3{font-size:30px;line-height:1;letter-spacing:-.06em;margin-bottom:10px}.proof-panel p{color:#c9cec8;margin-bottom:18px}.proof-img{width:100%;display:block;border-radius:22px;border:1px solid rgba(87,224,163,.14);background:#050505;max-height:520px;object-fit:contain}.proof-grid-small{display:grid;grid-template-columns:1fr 1fr;gap:14px}.proof-thumb{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);border-radius:24px;padding:12px}.proof-thumb img{width:100%;height:210px;object-fit:cover;border-radius:16px;border:1px solid rgba(87,224,163,.1)}.proof-thumb b{display:block;color:var(--mint);font-size:13px;margin-top:10px}.credibility-card{min-height:460px;border-radius:34px;background:radial-gradient(circle at 50% 0%,rgba(87,224,163,.10),transparent 34%),linear-gradient(145deg,rgba(15,22,18,.96),rgba(3,4,3,.98));border:1px solid rgba(87,224,163,.18);padding:34px;display:flex;flex-direction:column;justify-content:space-between}.credibility-card .mini-logo{width:145px;opacity:.38;filter:saturate(.78)}.credibility-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.credibility-item{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.035);border-radius:18px;padding:16px}.credibility-item small{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:950;margin-bottom:7px}.credibility-item b{color:#fff;font-size:18px;line-height:1.1}.clean-proof-copy{color:rgba(217,221,214,.75);max-width:820px;font-size:16px;margin-top:14px}.footer .logo-img{width:168px!important;max-height:52px!important;opacity:.68!important}.footer .logo-slogan{opacity:.46!important}@media(max-width:900px){.proof-metrics{grid-template-columns:1fr 1fr}.proof-gallery{grid-template-columns:1fr}.proof-grid-small{grid-template-columns:1fr}.proof-thumb img{height:auto}.logo-img{width:165px!important}}
+
+/* Credibility dashboard hero update */
+.hero{padding:84px 0 58px!important}
+.hero h1{font-size:clamp(54px,7.3vw,98px)!important;line-height:.88!important}
+.hero-dashboard{
+  border:1px solid rgba(87,224,163,.18);
+  background:
+    radial-gradient(circle at 74% 0%,rgba(87,224,163,.13),transparent 34%),
+    linear-gradient(145deg,rgba(13,18,15,.94),rgba(3,4,3,.98));
+  border-radius:34px;
+  padding:26px;
+  box-shadow:0 28px 88px rgba(0,0,0,.38);
+  overflow:hidden;
+}
+.dashboard-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:18px;
+  margin-bottom:20px;
+}
+.dashboard-kicker{
+  color:var(--mint);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:950;
+}
+.dashboard-title{
+  font-size:32px;
+  line-height:.96;
+  letter-spacing:-.07em;
+  max-width:360px;
+  margin-top:8px;
+}
+.dashboard-logo{
+  width:104px;
+  opacity:.32;
+  filter:saturate(.8);
+}
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.dashboard-stat{
+  min-height:132px;
+  border:1px solid rgba(255,255,255,.095);
+  background:linear-gradient(145deg,rgba(255,255,255,.048),rgba(87,224,163,.026));
+  border-radius:24px;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.dashboard-stat b{
+  color:var(--mint);
+  font-size:42px;
+  line-height:.9;
+  letter-spacing:-.075em;
+}
+.dashboard-stat span{
+  color:#d3d8d2;
+  font-size:13px;
+  font-weight:850;
+  line-height:1.25;
+}
+.activity-card{
+  margin-top:14px;
+  border:1px solid rgba(87,224,163,.14);
+  background:rgba(87,224,163,.045);
+  border-radius:24px;
+  padding:18px;
+}
+.activity-card b{
+  display:block;
+  color:#fff;
+  font-size:15px;
+  margin-bottom:10px;
+}
+.activity-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px 12px;
+}
+.activity-list span{
+  color:#cfd6cf;
+  font-size:12.5px;
+  font-weight:780;
+}
+.activity-list span:before{
+  content:"✓";
+  color:var(--mint);
+  margin-right:7px;
+  font-weight:950;
+}
+.dashboard-proof{
+  margin-top:14px;
+  border-radius:24px;
+  border:1px solid rgba(255,255,255,.09);
+  background:rgba(255,255,255,.025);
+  padding:12px;
+}
+.dashboard-proof img{
+  width:100%;
+  max-height:245px;
+  object-fit:cover;
+  object-position:top center;
+  border-radius:18px;
+  opacity:.88;
+  border:1px solid rgba(87,224,163,.1);
+}
+.dashboard-proof p{
+  margin:10px 4px 0!important;
+  color:rgba(217,221,214,.72)!important;
+  font-size:12px!important;
+  line-height:1.35!important;
+}
+.hero-logo-panel{display:none!important}
+.logo-img{
+  width:168px!important;
+  max-height:54px!important;
+  object-fit:contain!important;
+  opacity:.78!important;
+  filter:drop-shadow(0 10px 24px rgba(0,0,0,.32)) saturate(.88)!important;
+}
+.logo-slogan{
+  font-size:7.7px!important;
+  letter-spacing:.18em!important;
+  color:rgba(217,221,214,.42)!important;
+  margin-top:-10px!important;
+}
+nav a{position:relative}
+nav a:not(.wa):hover,nav a.active{color:var(--mint)!important}
+nav a.active:after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-12px;height:2px;border-radius:999px;
+  background:linear-gradient(90deg,transparent,var(--mint),transparent);
+}
+@media(max-width:900px){
+  .dashboard-grid{grid-template-columns:1fr 1fr}
+  .activity-list{grid-template-columns:1fr}
+  .dashboard-logo{width:86px}
+}
+@media(max-width:560px){
+  .dashboard-grid{grid-template-columns:1fr}
+  .hero-dashboard{padding:20px}
+}
+
 </style>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XGV5GJ0D2Y"></script>
@@ -139,12 +289,43 @@ nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-12px;heig
     })(window, document, "clarity", "script", "wwbn4g66z3");
   </script>
 </head><body><div class="ticker"><div><b>June Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div><header><div class="wrap nav"><a class="logo-lockup" href="index.html"><div class="brand-stack"><img class="logo-img" src="mmh-logo-header.png" alt="Mint Media House logo"><div class="logo-slogan">Credibility built for people moving forward</div></div></a><nav><a class="active" href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="wa" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%20%F0%9F%91%8B%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%3A%0A%0A%E2%98%90%20CV%20Revamp%0A%E2%98%90%20Job%20Applications%0A%E2%98%90%20Branding%20%2F%20Poster%20Design%0A%E2%98%90%20Business%20Support%0A%E2%98%90%20Digital%20Marketing%0A%0APlease%20assist%20me%20with%20pricing%20and%20next%20steps.">WhatsApp Us</a></nav></div></header>
-<main><section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Boutique digital support • South Africa</span><h1>Digital solutions that <em>move u forward.</em></h1><p>Mint Media House helps job seekers, founders and growing SMMEs present with more structure, confidence and proof where it matters: CVs, applications, proposals, branding and digital presence.</p><div class="actions"><a class="btn primary" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%20%F0%9F%91%8B%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%3A%0A%0A%E2%98%90%20CV%20Revamp%0A%E2%98%90%20Job%20Applications%0A%E2%98%90%20Branding%20%2F%20Poster%20Design%0A%E2%98%90%20Business%20Support%0A%E2%98%90%20Digital%20Marketing%0A%0APlease%20assist%20me%20with%20pricing%20and%20next%20steps.">Start on WhatsApp</a><a class="btn secondary" href="portfolio.html">View work direction</a></div><div class="stats"><div class="stat"><b>1500+</b><span>X community reach</span></div><div class="stat"><b>140+</b><span>Applications submitted</span></div><div class="stat"><b>27</b><span>CV revamps delivered</span></div><div class="stat"><b>8mo</b><span>Operating and building proof</span></div></div></div><div class="studio-card"><div class="hero-logo-panel"><img src="mmh-logo-full.png" alt="Mint Media House full logo"><p>Premium digital studio presence</p></div><div class="proposal-img-card"><img src="pharmacy-proposal-page-1.jpg" alt="Community Pharmacy Visibility Strategy proposal preview"></div></div></div></section>
-<section class="credibility-strip"><div class="wrap"><div class="section-head"><h2>Growing through real client work.</h2><p>Early traction built through practical services, visible digital presence and consistent support for job seekers and SMMEs.</p></div><div class="credibility-grid"><div class="credibility-card"><b>1500+</b><span>X community reach</span></div><div class="credibility-card"><b>280</b><span>TikTok followers</span></div><div class="credibility-card"><b>140+</b><span>Applications submitted</span></div><div class="credibility-card"><b>27</b><span>CV revamps completed</span></div><div class="credibility-card"><b>7</b><span>Logo and poster projects</span></div><div class="credibility-card"><b>4</b><span>Business plans completed</span></div><div class="credibility-card"><b>36</b><span>Facebook followers</span></div><div class="credibility-card"><b>8 months</b><span>Operating and building proof</span></div></div></div></section>
+<main><section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Boutique digital support • South Africa</span><h1>Credibility<br>built for<br><em>real<br>growth.</em></h1><p>Mint Media House helps job seekers, founders and growing SMMEs present with more structure, confidence and proof where it matters: CVs, applications, proposals, branding and digital presence.</p><div class="actions"><a class="btn primary" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%20%F0%9F%91%8B%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%3A%0A%0A%E2%98%90%20CV%20Revamp%0A%E2%98%90%20Job%20Applications%0A%E2%98%90%20Branding%20%2F%20Poster%20Design%0A%E2%98%90%20Business%20Support%0A%E2%98%90%20Digital%20Marketing%0A%0APlease%20assist%20me%20with%20pricing%20and%20next%20steps.">Start on WhatsApp</a><a class="btn secondary" href="portfolio.html">View work direction</a></div><div class="stats"><div class="stat"><b>1500+</b><span>X community reach</span></div><div class="stat"><b>140+</b><span>Applications submitted</span></div><div class="stat"><b>27</b><span>CV revamps delivered</span></div><div class="stat"><b>8mo</b><span>Operating and building proof</span></div></div></div><div class="studio-card">
+<div class="hero-dashboard">
+  <div class="dashboard-top">
+    <div>
+      <div class="dashboard-kicker">Credibility Dashboard</div>
+      <div class="dashboard-title">Real work, visible proof, practical growth.</div>
+    </div>
+    <img class="dashboard-logo" src="mmh-logo-full.png" alt="Mint Media House mark">
+  </div>
+  <div class="dashboard-grid">
+    <div class="dashboard-stat"><b>140+</b><span>Job applications submitted for clients</span></div>
+    <div class="dashboard-stat"><b>27</b><span>CV revamps and document cleanups completed</span></div>
+    <div class="dashboard-stat"><b>1500+</b><span>X audience built around jobs and business support</span></div>
+    <div class="dashboard-stat"><b>280</b><span>TikTok followers with visible content activity</span></div>
+  </div>
+  <div class="activity-card">
+    <b>Recent operating proof</b>
+    <div class="activity-list">
+      <span>CV work delivered</span>
+      <span>Applications supported</span>
+      <span>Pharmacy proposal built</span>
+      <span>Branding assets produced</span>
+      <span>Business plans completed</span>
+      <span>8 months operating</span>
+    </div>
+  </div>
+  <div class="dashboard-proof">
+    <img src="proof_tiktok_profile.png" alt="Mint Media House TikTok proof">
+    <p>Social proof snapshot: content presence, followers and pinned post activity.</p>
+  </div>
+</div>
+<div class="proposal-img-card"><img src="pharmacy-proposal-page-1.jpg" alt="Community Pharmacy Visibility Strategy proposal preview"></div></div></div></section>
 
 
 
-<section id="proof"><div class="wrap"><div class="section-head"><h2>Growing through real client work.</h2><p>Not empty numbers. These are proof points from actual activity: applications, CV support, client conversations, content reach and delivered design work.</p></div><div class="proof-metrics"><div class="proof-metric"><b>140+</b><span>Job applications submitted for clients</span></div><div class="proof-metric"><b>27</b><span>CV revamps and document cleanups completed</span></div><div class="proof-metric"><b>1500+</b><span>X audience built around jobs, business and digital support</span></div><div class="proof-metric"><b>8</b><span>Months of consistent brand building and service delivery</span></div></div><p class="clean-proof-copy">Proof is shown through real screenshots: profile growth, client conversations, application support, business design samples and digital visibility work.</p><div class="proof-gallery"><div class="proof-panel"><h3>Application support in action.</h3><p>Real submission proof showing the kind of practical support MMH provides for job seekers.</p><img class="proof-img" src="proof_application_support.jpg" alt="Proof of application support"></div><div class="proof-panel"><h3>Audience + client signals.</h3><p>Social reach and real client conversations show that MMH is active, discoverable and trusted enough to receive enquiries.</p><div class="proof-grid-small"><div class="proof-thumb"><img src="proof_tiktok_profile.png" alt="TikTok profile proof"><b>TikTok visibility</b></div><div class="proof-thumb"><img src="proof_x_profile.png" alt="X profile proof"><b>X audience</b></div><div class="proof-thumb"><img src="proof_whatsapp_enquiry.png" alt="WhatsApp enquiry proof"><b>Inbound enquiry</b></div><div class="proof-thumb"><img src="proof_client_communication.jpg" alt="Client communication proof"><b>Client conversation</b></div></div></div></div></div></section>
+
+
 <section><div class="wrap"><div class="section-head"><h2>Not another generic Canva-looking service page.</h2><p>The upgraded site now positions MMH like a compact digital studio: proof-led, South African, premium, human and conversion-ready.</p></div><div class="grid-3"><div class="card"><small>01 • Job Seekers</small><h3>CVs that read cleaner.</h3><p>Structured CV revamps, improved wording, readable layouts and application-ready PDF outputs.</p><span class="tag">from R150 →</span></div><div class="card"><small>02 • Founders</small><h3>Business presence that looks real.</h3><p>Branding, posters, company documents, pitch layouts and digital support for SMMEs.</p><span class="tag">brand support →</span></div><div class="card"><small>03 • Local Businesses</small><h3>Proposal-grade presentation.</h3><p>Visual direction that helps prospects see your business as established before you even speak.</p><span class="tag">proposal design →</span></div></div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Featured work direction.</h2><p>Instead of empty claims, MMH now presents work like a studio: project, challenge, output and business value.</p></div><div class="work-grid"><div class="work-tile large"><span class="label">Case Study</span><h3>Corporate proposal for a pharmacy prospect.</h3><p>A clean, pitch-ready proposal direction created to make MMH visually convincing for higher-value business conversations.</p><div class="proposal-img-card"><img src="pharmacy-proposal-page-4.jpg" alt="Recommended strategic rollout proposal preview"></div></div><div><div class="work-tile" style="margin-bottom:18px"><span class="label">CV Support</span><h3>Before/after CV transformation.</h3><p>Better hierarchy, recruiter readability and cleaner professional presentation.</p></div><div class="work-tile"><span class="label">SMME Branding</span><h3>Posters, logos and social proof assets.</h3><p>Visual content that makes small businesses look more established.</p></div></div></div></div></section>
 <section><div class="wrap split"><div class="credibility-card">
