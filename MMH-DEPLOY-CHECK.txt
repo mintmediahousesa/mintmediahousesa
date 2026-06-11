@@ -1,0 +1,2 @@
+MMH 9.6 fixed portfolio rebuild. If this file is visible in GitHub root, the correct ZIP was uploaded.
+portfolio.html must show: Real work. Real clients. Real outcomes.
