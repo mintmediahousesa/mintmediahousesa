@@ -139,6 +139,44 @@ section{padding:72px 0}
   max-height:820px!important;
 }
 
+
+/* Final polish: headline readability + premium proof handling */
+.headline-window{
+  min-height:315px!important;
+  overflow:hidden!important;
+}
+.headline-slide h1{
+  font-size:clamp(48px,5.8vw,82px)!important;
+  line-height:.94!important;
+  letter-spacing:-.072em!important;
+  max-width:760px!important;
+  word-spacing:-.04em!important;
+}
+.headline-slide h1 em{
+  display:inline!important;
+}
+@media(min-width:1200px){
+  .headline-window{min-height:322px!important}
+  .headline-slide h1{font-size:82px!important;line-height:.94!important}
+}
+@media(max-width:900px){
+  .headline-window{min-height:250px!important}
+  .headline-slide h1{font-size:48px!important;line-height:.94!important}
+}
+.evidence-card .proof-img{
+  height:255px!important;
+  object-fit:contain!important;
+  background:#050505!important;
+}
+.case-card img[src="whatsapp-visibility-proof.png"],
+.proof-card img[src="whatsapp-visibility-proof.png"],
+.proof-card img[src="x-profile-proof.png"],
+.proof-card img[src="tiktok-profile-proof.png"]{
+  object-fit:contain!important;
+  background:#050505!important;
+  max-height:780px!important;
+}
+
 </style></head><body>
 <div class="ticker"><div><b>May Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div>
 <header><div class="wrap nav">
@@ -154,15 +192,17 @@ section{padding:72px 0}
 <main>
 <section class="hero"><div class="wrap hero-grid">
   <div>
-    <div class="eyebrow">Built for job seekers, SMMEs & growing brands</div>
-    <div class="headline-window" aria-label="Mint Media House headline">
-      <div class="headline-slide"><h1>We sell<br><em>confidence.</em></h1></div>
-      <div class="headline-slide"><h1>Your next client<br><em>already has an opinion.</em></h1></div>
-      <div class="headline-slide"><h1>People judge<br><em>the packaging.</em></h1></div>
-      <div class="headline-slide"><h1>Credibility<br><em>isn’t luck.</em></h1></div>
-      <div class="headline-slide"><h1>First impressions<br><em>close doors too.</em></h1></div>
-    </div>
-    <p>Your CV, proposal, business or brand is judged before you explain it. MMH helps make that first judgment work in your favour.</p>
+    <div class="eyebrow">Built for job seekers, founders & growing brands</div>
+    
+<div class="headline-window" aria-label="Mint Media House headline">
+  <div class="headline-slide"><h1>We sell<br><em>confidence.</em></h1></div>
+  <div class="headline-slide"><h1>Your next client<br><em>already has an opinion.</em></h1></div>
+  <div class="headline-slide"><h1>People judge<br><em>the packaging.</em></h1></div>
+  <div class="headline-slide"><h1>Credibility<br><em>isn’t luck.</em></h1></div>
+  <div class="headline-slide"><h1>First impressions<br><em>close doors.</em></h1></div>
+</div>
+
+<p>Your CV, proposal, business or brand is judged before you explain it. MMH helps make that first judgment work in your favour.</p>
     <div class="actions"><a class="btn primary" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance">Start on WhatsApp</a><a class="btn secondary" href="portfolio.html">View proof</a></div>
     <div class="stats">
       <div class="stat"><b>1500+</b><span>X community reach</span></div>
@@ -183,7 +223,7 @@ section{padding:72px 0}
   <div class="evidence-grid">
     <article class="evidence-card"><small>CV Transformation</small><h3>Cleaner CVs that read professionally.</h3><p>Before-and-after CV work with private details blurred.</p><img class="proof-img" src="cv-before-after-blurred.png" alt="Blurred CV before and after proof"></article>
     <article class="evidence-card"><small>Pharmacy Case Study</small><h3>Proposal-grade business presentation.</h3><p>A real proposal direction created for a pharmacy prospect.</p><img class="proof-img" src="pharmacy-proposal-page-1.jpg" alt="Pharmacy visibility proposal"></article>
-    <article class="evidence-card"><small>Brand Assets</small><h3>Sales visuals for growing businesses.</h3><p>Posters, proposal covers and client-facing brand material.</p><img class="proof-img" src="bt-cleaning-supplies.png" alt="BT Logistix cleaning supplies poster"></article>
+    <article class="evidence-card"><small>Brand Assets</small><h3>Sales visuals for growing businesses.</h3><p>Posters, proposal covers and client-facing brand material.</p><img class="proof-img" src="bt-industrial-proposal.png" alt="BT Logistix cleaning supplies poster"></article>
   </div>
 </div></section>
 
