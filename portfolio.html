@@ -71,6 +71,30 @@ nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-13px;heig
   .page-hero h1{font-size:52px!important}
   .proof-tile{min-height:auto}
 }
+
+/* === 9.7 proof hierarchy polish === */
+.evidence-grid{grid-template-columns:1fr 1fr!important;gap:34px!important}
+.proof-tile{padding:34px!important}
+.proof-tile p{max-width:720px!important}
+.compact-proof .proof-frame,.audience-card .proof-frame{max-width:82%;margin-left:auto;margin-right:auto}
+.proof-smaller img{max-height:430px!important}
+.proof-smaller{min-height:230px!important;padding:10px!important}
+.metric-number{font-size:clamp(72px,8vw,116px);line-height:.8;font-weight:950;letter-spacing:-.09em;color:var(--mint);text-shadow:0 0 28px rgba(87,224,163,.20);margin:8px 0 14px}
+.metric-card h3,.audience-card h3{font-size:clamp(32px,3.7vw,54px)!important;line-height:.9!important;margin-bottom:14px!important}
+.audience-card{min-height:auto!important}
+.metric-row{align-items:start!important}
+.strategy-feature{grid-column:1 / -1!important;display:grid!important;grid-template-columns:.78fr 1.22fr!important;gap:34px!important;align-items:center!important;min-height:620px!important;background:radial-gradient(circle at 86% 18%,rgba(87,224,163,.16),transparent 35%),linear-gradient(135deg,rgba(87,224,163,.075),rgba(255,255,255,.025))!important;border-color:rgba(87,224,163,.24)!important}
+.strategy-feature .proof-frame{min-height:520px!important}
+.strategy-feature .proof-frame img{max-height:760px!important}
+.strategy-feature p{font-size:20px!important;line-height:1.45!important}
+.refined-head p{max-width:500px!important}
+.proof-frame{box-shadow:0 0 0 1px rgba(87,224,163,.08), 0 22px 80px rgba(0,0,0,.22)}
+@media(max-width:900px){
+  .strategy-feature{grid-template-columns:1fr!important;min-height:auto!important}
+  .compact-proof .proof-frame,.audience-card .proof-frame{max-width:100%}
+  .proof-smaller img{max-height:500px!important}
+}
+
 </style></head><body><div class="ticker"><div><b>Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div>
 <header><div class="wrap nav">
 <a class="logo-lockup" href="index.html"><div class="brand-stack"><img class="logo-img" src="mmh-logo-header.png" alt="Mint Media House logo"><div class="logo-slogan">Credibility built for people moving forward</div></div></a>
@@ -86,11 +110,11 @@ nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-13px;heig
 <section class="page-hero"><div class="wrap">
   <span class="eyebrow">Portfolio</span>
   <h1>Real work. Real clients. Real outcomes.</h1>
-  <p>From CV transformations and application support to business proposals, visibility strategy and digital assets. Every example below comes from actual client work or live projects.</p>
+  <p>From CV transformations and application support to business proposals, visibility strategy and digital assets. Every example below points to real work, real proof and practical business value.</p>
 </div></section>
 
 <section><div class="wrap portfolio-stack">
-  <div class="section-head"><h2>Case studies with proof.</h2><p>Actual outputs, client proof and distribution assets presented in one clean portfolio.</p></div>
+  <div class="section-head"><h2>Case studies with proof.</h2><p>Actual outputs. Client proof. Clearer credibility.</p></div>
 
   <article class="feature-case">
     <div class="feature-copy">
@@ -105,19 +129,59 @@ nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-13px;heig
     <div class="proof-frame"><img src="proof-pharmacy-cover.jpg" alt="Pharmacy visibility proposal cover"></div>
   </article>
 
-  <div class="proof-grid">
-    <article class="proof-tile large-img"><small>Case Study 02 • CV Work</small><h3>CV Transformation System.</h3><p>Professional restructuring, ATS-friendly formatting and stronger presentation designed to improve readability and employer perception. Personal details are blurred.</p><div class="proof-frame"><img src="cv-before-after-blurred.png" alt="Blurred CV before and after transformation"></div></article>
-    <article class="proof-tile"><small>Case Study 03 • Application Support</small><h3>140+ Applications Supported</h3><p>Real application support demonstrating document preparation and submission assistance. Names and file details are blurred for privacy.</p><div class="proof-frame"><img src="proof-application-support.jpg" alt="Cropped application support proof"></div></article>
-    <article class="proof-tile"><small>Case Study 04 • Visibility Strategy Support</small><h3>Visibility Strategy Support</h3><p>Real WhatsApp proof showing how MMH explains marketing support, platform alignment and visibility improvement before the work begins.</p><div class="proof-frame"><img src="proof-whatsapp-strategy.jpg" alt="WhatsApp visibility strategy proof"></div></article>
-    <article class="proof-tile"><small>Proposal Development</small><h3>Recommended strategic rollout.</h3><p>Showing clients a clear route from online presence cleanup to long-term visibility support.</p><div class="proof-frame"><img src="proof-pharmacy-rollout.jpg" alt="Strategic rollout proposal slide"></div></article>
+  <div class="proof-grid evidence-grid">
+    <article class="proof-tile large-img compact-proof">
+      <small>Case Study 02 • CV Work</small>
+      <h3>CV Transformation System.</h3>
+      <p>Cleaner structure. Stronger wording. Application-ready presentation.</p>
+      <div class="proof-frame"><img src="cv-before-after-blurred.png" alt="Blurred CV before and after transformation"></div>
+    </article>
+
+    <article class="proof-tile compact-proof metric-card">
+      <small>Case Study 03 • Application Support</small>
+      <div class="metric-number">140+</div>
+      <h3>Applications Supported</h3>
+      <p>Submission support with personal details removed.</p>
+      <div class="proof-frame proof-smaller"><img src="proof-application-support.jpg" alt="Cropped application support proof"></div>
+    </article>
+
+    <article class="proof-tile strategy-feature">
+      <small>Case Study 04 • Visibility Strategy</small>
+      <h3>Visibility support explained clearly.</h3>
+      <p>Real client conversation showing how MMH explains marketing support, platform alignment and customer visibility before design work begins.</p>
+      <div class="proof-frame"><img src="proof-whatsapp-strategy.jpg" alt="WhatsApp visibility strategy proof"></div>
+    </article>
+
+    <article class="proof-tile compact-proof">
+      <small>Proposal Development</small>
+      <h3>Recommended strategic rollout.</h3>
+      <p>Clear route from online presence cleanup to long-term visibility support.</p>
+      <div class="proof-frame proof-smaller"><img src="proof-pharmacy-rollout.jpg" alt="Strategic rollout proposal slide"></div>
+    </article>
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <div class="section-head"><h2>Audience & Distribution Assets.</h2><p>MMH is not waiting for clients to find the brand by accident. These channels support reach, visibility and trust.</p></div>
-  <div class="audience-row">
-    <article class="proof-tile large-img"><small>Audience Proof</small><h3>1,463 Followers</h3><p>Existing X audience foundation used to support visibility, trust and content distribution.</p><div class="proof-frame"><img src="proof-x-profile.jpg" alt="X profile audience proof"></div></article>
-    <article class="proof-tile large-img"><small>Social Proof</small><h3>3,909 Organic Views</h3><p>Organic TikTok presence showing profile activity, pinned content and public-facing distribution.</p><div class="proof-frame"><img src="proof-tiktok-profile.jpg" alt="TikTok profile content proof"></div></article>
+  <div class="section-head refined-head">
+    <h2>Audience & distribution assets.</h2>
+    <p>Proof that MMH has platforms to support visibility, not just design files.</p>
+  </div>
+  <div class="audience-row metric-row">
+    <article class="proof-tile audience-card">
+      <small>Audience Proof</small>
+      <div class="metric-number">1,463</div>
+      <h3>X followers</h3>
+      <p>Existing audience foundation for visibility and content distribution.</p>
+      <div class="proof-frame proof-smaller"><img src="proof-x-profile.jpg" alt="X profile audience proof"></div>
+    </article>
+
+    <article class="proof-tile audience-card">
+      <small>TikTok Proof</small>
+      <div class="metric-number">3,909</div>
+      <h3>Organic views</h3>
+      <p>Real TikTok page activity with pinned content and visible profile metrics.</p>
+      <div class="proof-frame proof-smaller"><img src="proof-tiktok-profile.jpg" alt="TikTok profile and pinned content proof"></div>
+    </article>
   </div>
 </div></section>
 
