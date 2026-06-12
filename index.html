@@ -30,6 +30,19 @@
 .capability-card h2{font-size:clamp(36px,4vw,54px);line-height:.92;letter-spacing:-.075em;margin:14px 0}
 .capability-card p{color:#d2d8d1;font-size:17px;max-width:850px}
 @media(max-width:900px){.service-grid{grid-template-columns:1fr}.headline-window{min-height:250px!important}.headline-slide h1{font-size:48px!important}}
+
+/* === Company snapshot + homepage proof polish === */
+.company-snapshot-section{padding:70px 0 30px}
+.snapshot-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.snapshot-grid article{border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.035);border-radius:24px;padding:22px;min-height:132px}
+.snapshot-grid strong{display:block;color:var(--mint);font-size:clamp(28px,3.2vw,48px);line-height:.9;letter-spacing:-.055em}
+.snapshot-grid span{display:block;color:var(--muted);font-weight:800;margin-top:14px;line-height:1.35}
+.evidence-card .proof-img{max-height:360px;object-fit:contain;background:#030504}
+.evidence-grid .evidence-card:nth-child(2) .proof-img{max-height:330px}
+.evidence-grid .evidence-card:nth-child(3) .proof-img{max-height:360px;width:100%;object-fit:contain}
+@media(max-width:1000px){.snapshot-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.snapshot-grid{grid-template-columns:1fr}.company-snapshot-section{padding-top:40px}}
+
 </style></head><body>
 <div class="ticker"><div><b>Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div>
 <header><div class="wrap nav">
@@ -68,12 +81,28 @@
   </div>
 </div></section>
 
+
+<section class="company-snapshot-section"><div class="wrap">
+  <div class="section-head">
+    <h2>Company snapshot for funders.</h2>
+    <p>Small, active and already executing. This is the operating proof behind Mint Media House.</p>
+  </div>
+  <div class="snapshot-grid">
+    <article><strong>Registered</strong><span>South African business</span></article>
+    <article><strong>27</strong><span>CV transformations completed</span></article>
+    <article><strong>140+</strong><span>applications supported</span></article>
+    <article><strong>1,463</strong><span>X followers</span></article>
+    <article><strong>Growing</strong><span>TikTok presence</span></article>
+    <article><strong>2025</strong><span>operating and building proof</span></article>
+  </div>
+</div></section>
+
 <section><div class="wrap">
   <div class="section-head"><h2>Evidence of execution.</h2><p>Real projects, real outcomes and real client-facing work. No filler. No empty claims.</p></div>
   <div class="evidence-grid">
     <article class="evidence-card"><small>CV Transformation</small><h3>Cleaner CVs that read professionally.</h3><p>Before-and-after CV work with private details blurred.</p><img class="proof-img" src="cv-before-after-blurred.png" alt="Blurred CV before and after proof"></article>
     <article class="evidence-card"><small>Application Support</small><h3>Beyond design. Actual submission support.</h3><p>Proof that MMH helps clients move from document to action.</p><img class="proof-img" src="application-support-proof.jpg" alt="Application support proof"></article>
-    <article class="evidence-card"><small>Business Presentation</small><h3>Proposal-grade trust assets.</h3><p>Business-facing visuals and proposal work built for serious conversations.</p><img class="proof-img" src="clarity-proof.png" alt="Mint Media House digital proof"></article>
+    <article class="evidence-card"><small>Business Presentation</small><h3>Proposal-grade trust assets.</h3><p>One clear proposal cover page that immediately communicates business-grade presentation.</p><img class="proof-img" src="proof-pharmacy-cover.jpg" alt="Pharmacy proposal cover page proof"></article>
   </div>
 </div></section>
 
