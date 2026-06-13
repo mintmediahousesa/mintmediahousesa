@@ -1,0 +1,1 @@
+Added Manrope-inspired rounded font system and footer social media icon row inspired by Dijo layout.
