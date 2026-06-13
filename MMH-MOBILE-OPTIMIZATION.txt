@@ -1,0 +1,1 @@
+Mobile optimization pass applied: hero, stats, cards, footer, chat button.
