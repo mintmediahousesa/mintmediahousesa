@@ -1,0 +1,1 @@
+Targeted mobile-only fix: ticker visible, nav tabs visible, rotating headline visible and unclipped. Desktop untouched.
