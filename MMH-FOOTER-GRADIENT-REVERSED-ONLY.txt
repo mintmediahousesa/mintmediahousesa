@@ -1,0 +1,1 @@
+Only footer gradient direction was reversed. Hero, mobile fixes, typography, buttons, and layout were left untouched.
