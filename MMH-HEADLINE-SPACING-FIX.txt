@@ -1,0 +1,1 @@
+Only headline letter spacing adjusted from aggressive negative spacing to -0.02em. No layout changes.
