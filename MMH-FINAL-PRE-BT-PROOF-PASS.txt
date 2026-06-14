@@ -1,0 +1,10 @@
+Final pre-BT proof pass from latest deploy only:
+- Created cropped X proof image to remove lower address/location area.
+- Created cropped TikTok proof image to reduce excess top white/header space.
+- Replaced HTML references to use cropped proof images.
+- Compact Company Snapshot cards.
+- Tighten proof card heights on mobile.
+- Refine proposal card hierarchy on mobile.
+- No hero/footer/colour/nav/contact CTA redesign.
+Crops: [('proof-x-profile-cropped.jpg', (800, 819), (800, 638)), ('proof-tiktok-profile-cropped.jpg', (592, 792), (592, 697))]
+HTML changed: ['about.html', 'contact.html', 'index.html', 'portfolio.html', 'services.html']

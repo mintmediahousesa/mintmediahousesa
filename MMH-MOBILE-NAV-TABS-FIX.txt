@@ -1,0 +1,1 @@
+Mobile nav/ticker visibility fix. Keeps tabs available via horizontal scroll. Does not force reloads to Home.

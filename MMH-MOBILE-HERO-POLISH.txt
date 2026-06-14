@@ -1,0 +1,1 @@
+Only mobile hero spacing, CTA stacking, stats visibility and proof hierarchy adjusted.

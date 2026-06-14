@@ -1,0 +1,7 @@
+Final targeted pass:
+- Tightened mobile hero spacing.
+- Reduced rotating headline size and increased safe area to prevent clipping.
+- Compact stacked mobile CTAs.
+- Stats remain higher and easier to scan.
+- Removed Suggestions & Feedback from Portfolio and placed it under Contact.
+- Desktop layout/footer/colours/proof assets left untouched.
