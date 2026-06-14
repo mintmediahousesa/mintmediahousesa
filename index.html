@@ -211,6 +211,101 @@ footer a{
 .hero-brand-card{margin-top:22px!important}
 }
 /* END MMH MOBILE HERO + PROOF HIERARCHY POLISH */
+
+/* === MMH MOBILE NAV/TICKER VISIBILITY FIX === */
+/* Fixes mobile tabs being hidden while preserving desktop. */
+@media (max-width:760px){
+  html,body{
+    max-width:100%!important;
+    overflow-x:hidden!important;
+  }
+
+  .topbar,
+  .ticker,
+  .promo-bar,
+  .moving-text,
+  .marquee{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+    gap:20px!important;
+    width:100%!important;
+  }
+
+  .topbar::-webkit-scrollbar,
+  .ticker::-webkit-scrollbar,
+  .promo-bar::-webkit-scrollbar,
+  .moving-text::-webkit-scrollbar,
+  .marquee::-webkit-scrollbar{
+    display:none!important;
+  }
+
+  header,
+  nav,
+  .nav,
+  .navbar,
+  .site-header{
+    overflow-x:hidden!important;
+    width:100%!important;
+  }
+
+  .nav-links,
+  .menu,
+  .desktop-nav,
+  header nav,
+  nav .wrap{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    white-space:nowrap!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+    gap:22px!important;
+    width:100%!important;
+    max-width:100%!important;
+    justify-content:flex-start!important;
+    padding-bottom:6px!important;
+  }
+
+  .nav-links::-webkit-scrollbar,
+  .menu::-webkit-scrollbar,
+  .desktop-nav::-webkit-scrollbar,
+  header nav::-webkit-scrollbar,
+  nav .wrap::-webkit-scrollbar{
+    display:none!important;
+  }
+
+  .nav-links a,
+  .menu a,
+  .desktop-nav a,
+  header nav a{
+    flex:0 0 auto!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    font-size:14px!important;
+  }
+
+  .logo,
+  .logo-img,
+  header img{
+    flex:0 0 auto!important;
+  }
+
+  .hero .actions .btn,
+  .actions .btn,
+  .hero-actions a{
+    min-height:58px!important;
+    padding:16px 22px!important;
+    border-radius:999px!important;
+  }
+}
+/* === END MMH MOBILE NAV/TICKER VISIBILITY FIX === */
+
 </style></head><body>
 <div class="ticker"><div><b>Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div>
 <header><div class="wrap nav">
