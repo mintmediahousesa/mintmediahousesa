@@ -1,0 +1,1 @@
+Applied global footer/contact aesthetic upgrade to all HTML pages. Removed IG/LinkedIn icons; kept Facebook and X only. Headline styling not intentionally changed.
