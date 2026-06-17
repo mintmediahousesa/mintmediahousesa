@@ -1,0 +1,1 @@
+Mint Media House V4.6\n\n- Cute premium WhatsApp pill styling.\n- Subtle swipe shine animation.\n- Arrow nudge on hover.\n- Applied globally across HTML pages.\n

@@ -12,11 +12,113 @@
   <style>
     :root{--bg:#050706;--panel:#0a0f0d;--mint:#57e0a3;--gold:#d7bd79;--text:#f5f7f3;--muted:#aeb8b0;--line:rgba(255,255,255,.11);--max:1180px}
     *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;letter-spacing:-.018em;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 16% 8%,rgba(87,224,163,.18),transparent 30%),radial-gradient(circle at 86% 10%,rgba(215,189,121,.09),transparent 26%),linear-gradient(180deg,#030403 0%,#08110c 46%,#050605 100%)}body:after{content:"";position:fixed;inset:0;z-index:-2;opacity:.055;background-image:linear-gradient(rgba(255,255,255,.55) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.55) 1px,transparent 1px);background-size:84px 84px;mask-image:linear-gradient(180deg,#000 0%,transparent 72%)}.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}.topline{height:34px;border-bottom:1px solid rgba(87,224,163,.16);background:rgba(0,0,0,.34);overflow:hidden;display:flex;align-items:center}.topline span{white-space:nowrap;color:#dbe5dc;text-transform:uppercase;font-size:11px;font-weight:900;letter-spacing:.16em}.topline b{color:var(--mint);margin:0 20px}header{position:sticky;top:0;z-index:50;background:rgba(4,6,5,.78);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;text-decoration:none;min-width:180px}.brand img{width:164px;max-height:58px;object-fit:contain;object-position:left center;opacity:.9;filter:drop-shadow(0 16px 34px rgba(0,0,0,.4))}nav{display:flex;align-items:center;gap:24px}nav a{color:#d6ded6;text-decoration:none;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.12em}nav a:hover,nav a.active{color:var(--mint)}.nav-cta{background:var(--mint);color:#03120c!important;padding:13px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(87,224,163,.22)}section{padding:82px 0}.page-hero{padding:74px 0 44px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--mint);border:1px solid rgba(87,224,163,.28);background:rgba(87,224,163,.07);padding:9px 14px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 20px rgba(87,224,163,.8)}h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif}.page-hero h1{font-size:clamp(58px,8vw,112px);line-height:.84;letter-spacing:-.075em;max-width:1000px;margin-bottom:24px}.page-hero p{font-size:clamp(18px,2vw,22px);line-height:1.4;color:#dce4da;max-width:820px;font-weight:600}.section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:34px}.section-kicker{color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:950;margin-bottom:12px;display:block}.section-head h2{font-size:clamp(42px,5.4vw,76px);line-height:.88;letter-spacing:-.075em;max-width:780px}.section-head p{max-width:440px;color:var(--muted);font-size:18px}.case-showcase{border:1px solid rgba(87,224,163,.18);background:linear-gradient(145deg,rgba(15,22,18,.92),rgba(5,6,5,.96));border-radius:38px;overflow:hidden;display:grid;grid-template-columns:.86fr 1.14fr;box-shadow:0 34px 100px rgba(0,0,0,.34)}.case-info{padding:42px}.project-label{display:inline-flex;background:rgba(87,224,163,.09);border:1px solid rgba(87,224,163,.25);border-radius:999px;color:var(--mint);font-size:11px;font-weight:950;letter-spacing:.15em;text-transform:uppercase;padding:9px 13px;margin-bottom:20px}.case-info h2{font-size:clamp(44px,5vw,72px);line-height:.86;letter-spacing:-.075em;margin-bottom:22px}.case-info p{font-size:18px;color:#d4dcd3;max-width:540px;margin-bottom:24px}.deliverables{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:28px 0}.deliverables span{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:13px;background:rgba(255,255,255,.035);color:#eef4ee;font-size:13px;font-weight:850}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:14px 19px;font-weight:900}.primary{background:var(--mint);color:#03120c}.secondary{border:1px solid rgba(87,224,163,.38);color:var(--mint);background:rgba(87,224,163,.045)}.actions{display:flex;gap:12px;flex-wrap:wrap}.case-visual{position:relative;min-height:560px;background:radial-gradient(circle at 34% 24%,rgba(87,224,163,.16),transparent 34%),#050706;padding:32px;display:grid;grid-template-columns:1fr 1fr;align-content:center;gap:18px}.mock{border:1px solid rgba(255,255,255,.12);border-radius:26px;background:#0c0f0d;padding:14px;box-shadow:0 24px 70px rgba(0,0,0,.46)}.mock img{width:100%;display:block;border-radius:18px;max-height:310px;object-fit:contain;background:#020302}.doc-grid,.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.doc-card,.proof-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.052),rgba(255,255,255,.018));border-radius:30px;padding:22px;overflow:hidden}.doc-card small,.proof-card small{color:var(--gold);font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:950}.doc-card h3,.proof-card h3{font-size:34px;letter-spacing:-.055em;line-height:.95;margin:16px 0 12px}.doc-card p,.proof-card p{font-size:16px;color:#bdc7bd;margin-bottom:16px}.doc-card img,.proof-card img{width:100%;height:420px;object-fit:contain;border-radius:20px;border:1px solid rgba(87,224,163,.13);background:#020302}.doc-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.proof-card img{height:280px}.cta-panel{border:1px solid rgba(87,224,163,.24);border-radius:38px;padding:48px;background:radial-gradient(circle at 82% 10%,rgba(87,224,163,.18),transparent 32%),linear-gradient(135deg,rgba(16,23,18,.96),rgba(4,5,4,.98));display:flex;justify-content:space-between;gap:32px;align-items:center}.cta-panel h2{font-size:clamp(40px,5vw,70px);line-height:.88;letter-spacing:-.075em}.cta-panel p{color:#d2dbd3;font-size:18px;max-width:500px;margin-top:14px}footer{margin-top:70px;background:linear-gradient(180deg,#0b8f18,#9fd09d 52%,#e9f5e9);border-top-left-radius:48px;border-top-right-radius:48px;padding:62px 0 40px;color:#fff}.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .9fr;gap:56px}footer img{width:170px;margin-bottom:20px}footer p,footer a{color:rgba(255,255,255,.94);font-size:15px;text-decoration:none;display:block;margin:8px 0}footer h3{font-size:18px;margin-bottom:14px}.credit{border-top:1px solid rgba(255,255,255,.28);margin-top:28px;padding-top:18px;font-size:13px;color:rgba(255,255,255,.9)}@media(max-width:980px){.case-showcase,.case-visual,.doc-grid,.proof-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:16px}.nav{height:auto;padding:10px 0;align-items:center}.brand{min-width:96px;flex:0 0 auto}.brand img{width:118px;max-height:44px}nav{display:flex;overflow-x:auto;white-space:nowrap;gap:10px;padding:6px 0;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{font-size:9px;letter-spacing:.10em;flex:0 0 auto}.nav-cta{padding:9px 12px}.case-visual{min-height:auto}.doc-card img{height:360px}.footer-grid{grid-template-columns:1fr;gap:26px}.cta-panel{display:block}.cta-panel .actions{margin-top:24px}}@media(max-width:520px){.topline{display:none}.wrap{padding:0 18px}.wrap.nav{padding-left:14px;padding-right:14px}.brand img{width:96px;max-height:38px}nav{max-width:calc(100vw - 128px)}section{padding:56px 0}.page-hero h1{font-size:54px}.case-info,.doc-card,.proof-card,.cta-panel{padding:22px;border-radius:26px}.deliverables{grid-template-columns:1fr}.doc-card img,.proof-card img{height:250px}.actions .btn{width:100%}footer{border-top-left-radius:34px;border-top-right-radius:34px;padding-bottom:86px}}
-  </style>
+  
+/* Mint V4.6 — cute WhatsApp motion polish */
+a[href*="wa.me"],
+a[href*="whatsapp"],
+a[href*="api.whatsapp"],
+.whatsapp,
+.whatsapp-btn,
+.btn-whatsapp,
+.cta-whatsapp,
+.nav-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 999px !important;
+  letter-spacing: .01em;
+  box-shadow: 0 0 0 1px rgba(86, 232, 163, .22), 0 14px 34px rgba(86, 232, 163, .14);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+a[href*="wa.me"]::before,
+a[href*="whatsapp"]::before,
+a[href*="api.whatsapp"]::before,
+.whatsapp::before,
+.whatsapp-btn::before,
+.btn-whatsapp::before,
+.cta-whatsapp::before,
+.nav-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.28) 34%, rgba(255,255,255,.52) 50%, rgba(255,255,255,.22) 66%, transparent 100%);
+  transform: translateX(-140%) skewX(-18deg);
+  animation: mintSwipe 4.8s ease-in-out infinite;
+}
+
+a[href*="wa.me"]::after,
+a[href*="whatsapp"]::after,
+a[href*="api.whatsapp"]::after,
+.whatsapp::after,
+.whatsapp-btn::after,
+.btn-whatsapp::after,
+.cta-whatsapp::after,
+.nav-cta::after {
+  content: "›";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .55rem;
+  width: 1.35em;
+  height: 1.35em;
+  border-radius: 999px;
+  background: rgba(0,0,0,.16);
+  transform: translateX(0);
+  transition: transform .22s ease, background .22s ease;
+}
+
+a[href*="wa.me"]:hover,
+a[href*="whatsapp"]:hover,
+a[href*="api.whatsapp"]:hover,
+.whatsapp:hover,
+.whatsapp-btn:hover,
+.btn-whatsapp:hover,
+.cta-whatsapp:hover,
+.nav-cta:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+  box-shadow: 0 0 0 1px rgba(86, 232, 163, .32), 0 18px 44px rgba(86, 232, 163, .22);
+}
+
+a[href*="wa.me"]:hover::after,
+a[href*="whatsapp"]:hover::after,
+a[href*="api.whatsapp"]:hover::after,
+.whatsapp:hover::after,
+.whatsapp-btn:hover::after,
+.btn-whatsapp:hover::after,
+.cta-whatsapp:hover::after,
+.nav-cta:hover::after {
+  transform: translateX(4px);
+  background: rgba(0,0,0,.24);
+}
+
+@keyframes mintSwipe {
+  0%, 52% { transform: translateX(-145%) skewX(-18deg); opacity: 0; }
+  58% { opacity: .75; }
+  76% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
+  100% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a[href*="wa.me"]::before,
+  a[href*="whatsapp"]::before,
+  a[href*="api.whatsapp"]::before,
+  .whatsapp::before,
+  .whatsapp-btn::before,
+  .btn-whatsapp::before,
+  .cta-whatsapp::before,
+  .nav-cta::before {
+    animation: none;
+  }
+}
+
+</style>
 </head>
 <body>
   <div class="topline"><span><b>Mint Media House</b> Selected Work <b>BT Logistix</b> Website <b>Documents</b> Quotation framework <b>Service request system</b></span></div>
-  <header><div class="wrap nav"><a class="brand" href="index.html"><img src="mmh-logo-header.png" alt="Mint Media House logo"></a><nav aria-label="Primary navigation"><a href="index.html#work">Work</a><a href="index.html#build">Services</a><a href="index.html#proof">Proof</a><a class="active" href="portfolio.html">Portfolio</a><a class="nav-cta" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20need%20help%20with%20a%20project.">WhatsApp</a></nav></div></header>
+  <header><div class="wrap nav"><a class="brand" href="index.html"><img src="mmh-logo-header.png" alt="Mint Media House logo"></a><nav aria-label="Primary navigation"><a href="index.html#work">Work</a><a href="index.html#build">Services</a><a href="index.html#proof">Proof</a><a class="active" href="portfolio.html">Portfolio</a><a class="nav-cta" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20need%20help%20with%20a%20project.">💬 Let’s talk</a></nav></div></header>
   <main>
     <section class="page-hero"><div class="wrap"><div class="eyebrow">Portfolio • selected work</div><h1>Proof that can be opened, sent and used.</h1><p>Mint's work is not just visual. It turns small businesses into cleaner, more credible operators with documents, websites and systems that support real conversations.</p></div></section>
     <section><div class="wrap"><div class="section-head"><div><span class="section-kicker">Project 001</span><h2>BT Logistix credibility system.</h2></div><p>A full business-facing package: website identity, service catalogue, proposal assets, service request form and quotation card.</p></div><article class="case-showcase"><div class="case-info"><span class="project-label">BT Logistix • logistics & supply</span><h2>From operator to credible logistics brand.</h2><p>Mint shaped BT into a business that can receive quote requests, present services, send documents and look serious before the first WhatsApp conversation.</p><div class="deliverables"><span>Website system</span><span>Capability statement</span><span>Catalogue assets</span><span>Service request form</span><span>Quotation card</span><span>Operational positioning</span></div><div class="actions"><a class="btn primary" href="BT_Logistix_Service_Request_Form.pdf">Open form</a><a class="btn secondary" href="BT_Logistix_Quotation_Card.pdf">Open quotation</a></div></div><div class="case-visual"><div class="mock"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"></div><div class="mock"><img src="bt-cleaning-supplies.png" alt="BT Logistix cleaning supplies catalogue"></div></div></article></div></section>

@@ -67,7 +67,109 @@
   h1{font-size:clamp(50px,17vw,68px)!important;line-height:.86!important;}
 }
 
-  </style>
+  
+/* Mint V4.6 — cute WhatsApp motion polish */
+a[href*="wa.me"],
+a[href*="whatsapp"],
+a[href*="api.whatsapp"],
+.whatsapp,
+.whatsapp-btn,
+.btn-whatsapp,
+.cta-whatsapp,
+.nav-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 999px !important;
+  letter-spacing: .01em;
+  box-shadow: 0 0 0 1px rgba(86, 232, 163, .22), 0 14px 34px rgba(86, 232, 163, .14);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+a[href*="wa.me"]::before,
+a[href*="whatsapp"]::before,
+a[href*="api.whatsapp"]::before,
+.whatsapp::before,
+.whatsapp-btn::before,
+.btn-whatsapp::before,
+.cta-whatsapp::before,
+.nav-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.28) 34%, rgba(255,255,255,.52) 50%, rgba(255,255,255,.22) 66%, transparent 100%);
+  transform: translateX(-140%) skewX(-18deg);
+  animation: mintSwipe 4.8s ease-in-out infinite;
+}
+
+a[href*="wa.me"]::after,
+a[href*="whatsapp"]::after,
+a[href*="api.whatsapp"]::after,
+.whatsapp::after,
+.whatsapp-btn::after,
+.btn-whatsapp::after,
+.cta-whatsapp::after,
+.nav-cta::after {
+  content: "›";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .55rem;
+  width: 1.35em;
+  height: 1.35em;
+  border-radius: 999px;
+  background: rgba(0,0,0,.16);
+  transform: translateX(0);
+  transition: transform .22s ease, background .22s ease;
+}
+
+a[href*="wa.me"]:hover,
+a[href*="whatsapp"]:hover,
+a[href*="api.whatsapp"]:hover,
+.whatsapp:hover,
+.whatsapp-btn:hover,
+.btn-whatsapp:hover,
+.cta-whatsapp:hover,
+.nav-cta:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+  box-shadow: 0 0 0 1px rgba(86, 232, 163, .32), 0 18px 44px rgba(86, 232, 163, .22);
+}
+
+a[href*="wa.me"]:hover::after,
+a[href*="whatsapp"]:hover::after,
+a[href*="api.whatsapp"]:hover::after,
+.whatsapp:hover::after,
+.whatsapp-btn:hover::after,
+.btn-whatsapp:hover::after,
+.cta-whatsapp:hover::after,
+.nav-cta:hover::after {
+  transform: translateX(4px);
+  background: rgba(0,0,0,.24);
+}
+
+@keyframes mintSwipe {
+  0%, 52% { transform: translateX(-145%) skewX(-18deg); opacity: 0; }
+  58% { opacity: .75; }
+  76% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
+  100% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a[href*="wa.me"]::before,
+  a[href*="whatsapp"]::before,
+  a[href*="api.whatsapp"]::before,
+  .whatsapp::before,
+  .whatsapp-btn::before,
+  .btn-whatsapp::before,
+  .cta-whatsapp::before,
+  .nav-cta::before {
+    animation: none;
+  }
+}
+
+</style>
 </head>
 <body>
   <div class="topline"><span><b>Mint Media House</b> Proof-led creative support <b>CVs</b> Applications <b>Business Plans</b> Branding <b>Websites</b> Visibility systems</span></div>
@@ -79,7 +181,7 @@
         <a href="#build">Services</a>
         <a href="#proof">Proof</a>
         <a href="portfolio.html">Portfolio</a>
-        <a class="nav-cta" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20need%20help%20with%20a%20project.">WhatsApp</a>
+        <a class="nav-cta" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20need%20help%20with%20a%20project.">💬 Let’s talk</a>
       </nav>
     </div>
   </header>
@@ -93,7 +195,7 @@
           <p class="hero-copy">Helping South Africans look credible before they speak — through CVs, applications, business plans, branding, websites and visibility assets.</p>
           <div class="actions">
             <a class="btn primary" href="#work">View selected work</a>
-            <a class="btn secondary" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20want%20to%20start%20a%20project.">Start on WhatsApp</a>
+            <a class="btn secondary" href="https://wa.me/27737655664?text=Hi%20Mint%20Media%20House%2C%20I%20want%20to%20start%20a%20project.">💬 Start on WhatsApp</a>
           </div>
         </div>
         <aside class="studio-card">
