@@ -187,6 +187,21 @@ a[href*="api.whatsapp"]:hover::after,
   }
 }
 
+
+/* Mint V4.8 — BT clicks + final CTA overlay polish */
+.signal-row.clean-tags{display:flex!important;gap:10px!important;flex-wrap:wrap!important;margin-top:auto!important}
+.signal-row.clean-tags span{border:1px solid rgba(255,255,255,.11);border-radius:999px;padding:12px 15px;background:rgba(255,255,255,.045);font-size:12px;font-weight:900;color:#edf5ee;letter-spacing:.02em;white-space:nowrap}
+.case-visual a.mock,.doc-card.link-card{display:block;text-decoration:none;color:inherit;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.case-visual a.mock:hover,.doc-card.link-card:hover{transform:translateY(-4px);border-color:rgba(87,224,163,.34);box-shadow:0 24px 70px rgba(87,224,163,.10)}
+.bt-visit-note{display:inline-flex;align-items:center;gap:8px;color:var(--mint);font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.13em;margin-top:10px}
+.doc-grid.four-docs{grid-template-columns:repeat(4,1fr)}
+.doc-card img{width:100%;height:230px;object-fit:contain;border-radius:18px;border:1px solid rgba(87,224,163,.13);background:#020302;margin:16px 0}
+.final-cta{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12)!important;border-radius:44px!important;padding:58px!important;background:linear-gradient(135deg,rgba(5,7,6,.98),rgba(7,11,9,.96))!important;box-shadow:0 34px 110px rgba(0,0,0,.42)!important}
+.final-cta:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 12% 18%,rgba(87,224,163,.18),transparent 32%),radial-gradient(circle at 86% 72%,rgba(215,189,121,.15),transparent 30%),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,auto,82px 82px,82px 82px;opacity:.82;pointer-events:none}
+.final-cta>*{position:relative;z-index:2}.final-cta h2{font-size:clamp(46px,6vw,82px)!important}.final-cta p{max-width:560px!important;color:#dbe5dc!important}.final-cta .btn.primary{background:var(--mint);color:#031006}
+@media(max-width:980px){.doc-grid.four-docs{grid-template-columns:repeat(2,1fr)}.final-cta{padding:34px!important}}
+@media(max-width:620px){.signal-row.clean-tags{gap:8px!important}.signal-row.clean-tags span{font-size:11px;padding:10px 12px}.doc-grid.four-docs{grid-template-columns:1fr}.final-cta{border-radius:30px!important;padding:28px!important}.final-cta h2{font-size:44px!important}}
+
 </style>
 </head>
 <body>
@@ -222,8 +237,8 @@ a[href*="api.whatsapp"]:hover::after,
             <h2>Built for people who need to be taken seriously.</h2>
             <p>Not just design. Credibility systems for job seekers, startups and operators who need cleaner presentation.</p>
           </div>
-          <div class="signal-row">
-            <div><b>01</b>Clear offer</div><div><b>02</b>Better proof</div><div><b>03</b>Ready to send</div>
+          <div class="signal-row clean-tags">
+            <span>Clearer voice</span><span>Stronger proof</span><span>Ready assets</span>
           </div>
         </aside>
       </div>
@@ -232,8 +247,8 @@ a[href*="api.whatsapp"]:hover::after,
     <section id="work">
       <div class="wrap">
         <div class="section-head">
-          <div><span class="section-kicker">Selected work</span><h2>Project 001 carries the proof.</h2></div>
-          <p>BT Logistix became more than a website: it became a complete business presentation system.</p>
+          <div><span class="section-kicker">Selected work</span><h2>BT Logistix credibility system.</h2></div>
+          <p>A complete identity, website and document system for a Pretoria logistics and supply operator.</p>
         </div>
         <article class="case-showcase">
           <div class="case-info">
@@ -243,11 +258,11 @@ a[href*="api.whatsapp"]:hover::after,
             <div class="deliverables">
               <span>Website system</span><span>Capability statement</span><span>Product catalogue</span><span>Quote workflow</span><span>Service request form</span><span>Operational positioning</span>
             </div>
-            <div class="actions"><a class="btn primary" href="portfolio.html">View more work</a><a class="btn secondary" href="#proof">See proof</a></div>
+            <div class="actions"><a class="btn primary" href="https://btlogistix.vercel.app/" target="_blank" rel="noopener">Visit BT Logistix</a><a class="btn secondary" href="portfolio.html#bt-logistix">View case study</a></div>
           </div>
           <div class="case-visual" aria-label="BT Logistix visual proof">
-            <div class="mock"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"></div>
-            <div class="mock second"><img src="bt-cleaning-supplies.png" alt="BT Logistix catalogue design"></div>
+            <a class="mock" href="https://btlogistix.vercel.app/" target="_blank" rel="noopener"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"><span class="bt-visit-note">Visit BT →</span></a>
+            <a class="mock second" href="https://btlogistix.vercel.app/" target="_blank" rel="noopener"><img src="bt-cleaning-supplies.png" alt="BT Logistix catalogue design"><span class="bt-visit-note">Open BT →</span></a>
           </div>
         </article>
       </div>
@@ -294,9 +309,9 @@ a[href*="api.whatsapp"]:hover::after,
 
     <section>
       <div class="wrap">
-        <div class="cta-panel">
-          <div><h2>Need to look more credible?</h2><p>Send what you have. Mint will help shape it into something cleaner, sharper and easier to trust.</p></div>
-          <div class="actions"><a class="btn primary" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">WhatsApp Mint</a></div>
+        <div class="cta-panel final-cta">
+          <div><h2>Let’s build something credible.</h2><p>CVs, applications, business plans, websites and visibility assets — shaped to look serious before the first conversation.</p></div>
+          <div class="actions"><a class="btn primary" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">💬 Start on WhatsApp</a></div>
         </div>
       </div>
     </section>
