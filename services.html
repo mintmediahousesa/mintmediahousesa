@@ -470,7 +470,8 @@ footer a{
 /* === END MMH FINAL PRE-BT PROOF PASS === */
 
 
-/* Mint V4.6 — cute WhatsApp motion polish */
+
+/* Mint V4.7 - WhatsApp number + slide-to-talk motion */
 a[href*="wa.me"],
 a[href*="whatsapp"],
 a[href*="api.whatsapp"],
@@ -484,7 +485,8 @@ a[href*="api.whatsapp"],
   isolation: isolate;
   border-radius: 999px !important;
   letter-spacing: .01em;
-  box-shadow: 0 0 0 1px rgba(86, 232, 163, .22), 0 14px 34px rgba(86, 232, 163, .14);
+  transform: translateZ(0);
+  box-shadow: 0 0 0 1px rgba(86,232,163,.24), 0 14px 34px rgba(86,232,163,.14);
   transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
 }
 
@@ -498,11 +500,16 @@ a[href*="api.whatsapp"]::before,
 .nav-cta::before {
   content: "";
   position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.28) 34%, rgba(255,255,255,.52) 50%, rgba(255,255,255,.22) 66%, transparent 100%);
-  transform: translateX(-140%) skewX(-18deg);
-  animation: mintSwipe 4.8s ease-in-out infinite;
+  top: 50%;
+  left: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.36);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.32);
+  transform: translateY(-50%);
+  animation: mintSlideDot 3.8s ease-in-out infinite;
+  pointer-events: none;
 }
 
 a[href*="wa.me"]::after,
@@ -513,16 +520,15 @@ a[href*="api.whatsapp"]::after,
 .btn-whatsapp::after,
 .cta-whatsapp::after,
 .nav-cta::after {
-  content: "›";
+  content: "→";
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: .55rem;
-  width: 1.35em;
-  height: 1.35em;
+  margin-left: .65rem;
+  width: 1.45em;
+  height: 1.45em;
   border-radius: 999px;
-  background: rgba(0,0,0,.16);
-  transform: translateX(0);
+  background: rgba(0,0,0,.18);
   transition: transform .22s ease, background .22s ease;
 }
 
@@ -535,8 +541,19 @@ a[href*="api.whatsapp"]:hover,
 .cta-whatsapp:hover,
 .nav-cta:hover {
   transform: translateY(-2px);
-  filter: saturate(1.08);
-  box-shadow: 0 0 0 1px rgba(86, 232, 163, .32), 0 18px 44px rgba(86, 232, 163, .22);
+  filter: saturate(1.1);
+  box-shadow: 0 0 0 1px rgba(86,232,163,.36), 0 20px 48px rgba(86,232,163,.24);
+}
+
+a[href*="wa.me"]:hover::before,
+a[href*="whatsapp"]:hover::before,
+a[href*="api.whatsapp"]:hover::before,
+.whatsapp:hover::before,
+.whatsapp-btn:hover::before,
+.btn-whatsapp:hover::before,
+.cta-whatsapp:hover::before,
+.nav-cta:hover::before {
+  animation-duration: 1.6s;
 }
 
 a[href*="wa.me"]:hover::after,
@@ -547,15 +564,15 @@ a[href*="api.whatsapp"]:hover::after,
 .btn-whatsapp:hover::after,
 .cta-whatsapp:hover::after,
 .nav-cta:hover::after {
-  transform: translateX(4px);
-  background: rgba(0,0,0,.24);
+  transform: translateX(5px);
+  background: rgba(0,0,0,.28);
 }
 
-@keyframes mintSwipe {
-  0%, 52% { transform: translateX(-145%) skewX(-18deg); opacity: 0; }
-  58% { opacity: .75; }
-  76% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
-  100% { transform: translateX(145%) skewX(-18deg); opacity: 0; }
+@keyframes mintSlideDot {
+  0%, 62% { transform: translate(0, -50%) scale(.82); opacity: 0; }
+  68% { opacity: .72; }
+  82% { transform: translate(28px, -50%) scale(1); opacity: .34; }
+  100% { transform: translate(52px, -50%) scale(.82); opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -568,6 +585,7 @@ a[href*="api.whatsapp"]:hover::after,
   .cta-whatsapp::before,
   .nav-cta::before {
     animation: none;
+    opacity: .22;
   }
 }
 
@@ -581,7 +599,7 @@ a[href*="api.whatsapp"]:hover::after,
 <a class="" href="portfolio.html">Portfolio</a>
 <a class="" href="about.html">About</a>
 <a class="" href="contact.html">Contact</a>
-<a class="wa" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance">WhatsApp Us</a>
+<a class="wa" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">WhatsApp Us</a>
 </nav></div></header>
 <main>
 <section class="page-hero"><div class="wrap">
@@ -610,9 +628,9 @@ a[href*="api.whatsapp"]:hover::after,
   </div>
 </div></section>
 
-<section><div class="wrap"><div class="service-grid"><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20CV%20Revamp">CV Revamp</a></h3><p>Professional layout cleanup, stronger wording and improved readability.</p><div class="service-proof">27+ transformations completed</div><p><strong style="color:var(--mint)">Basic from R150 • Standard R250 • Premium R400</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20CV%20Revamp">Get CV Revamp →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Job%20Applications">Job Applications</a></h3><p>Structured application support for job seekers who need consistency and organisation.</p><div class="service-proof">140+ applications supported</div><p><strong style="color:var(--mint)">5 for R150 • 10 for R250 • 20 for R400</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Job%20Applications">Get Job Applications →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Business%20Plans%20or%20CIPC%20Registration">Business Plans & CIPC</a></h3><p>Support for SMMEs preparing company documents and business presentation.</p><p><strong style="color:var(--mint)">Business plans from R350 • CIPC service fee R250–R350</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Business%20Plans%20or%20CIPC%20Registration">Get Business Plans & CIPC →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Branding%20and%20Design">Branding & Design</a></h3><p>Logo direction, posters, social media visuals and proposal-ready design assets.</p><p><strong style="color:var(--mint)">Posters from R150 • Logos from R200</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Branding%20and%20Design">Get Branding & Design →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20SARS%20eFiling%20Support">SARS eFiling Support</a></h3><p>Assistance with digital tax/admin navigation for individuals and small businesses.</p><p><strong style="color:var(--mint)">Ask for current support options</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20SARS%20eFiling%20Support">Get SARS eFiling Support →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Digital%20Marketing%20Support">Digital Marketing Support</a></h3><p>Content direction, landing-page presentation and visibility support for small businesses.</p><div class="service-proof">Audience reach across X and TikTok</div><p><strong style="color:var(--mint)">7-day support and custom options</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance%20with%20Digital%20Marketing%20Support">Get Digital Marketing Support →</a></article></div></div></section>
+<section><div class="wrap"><div class="service-grid"><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">CV Revamp</a></h3><p>Professional layout cleanup, stronger wording and improved readability.</p><div class="service-proof">27+ transformations completed</div><p><strong style="color:var(--mint)">Basic from R150 • Standard R250 • Premium R400</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get CV Revamp →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Job Applications</a></h3><p>Structured application support for job seekers who need consistency and organisation.</p><div class="service-proof">140+ applications supported</div><p><strong style="color:var(--mint)">5 for R150 • 10 for R250 • 20 for R400</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get Job Applications →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Business Plans & CIPC</a></h3><p>Support for SMMEs preparing company documents and business presentation.</p><p><strong style="color:var(--mint)">Business plans from R350 • CIPC service fee R250–R350</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get Business Plans & CIPC →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Branding & Design</a></h3><p>Logo direction, posters, social media visuals and proposal-ready design assets.</p><p><strong style="color:var(--mint)">Posters from R150 • Logos from R200</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get Branding & Design →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">SARS eFiling Support</a></h3><p>Assistance with digital tax/admin navigation for individuals and small businesses.</p><p><strong style="color:var(--mint)">Ask for current support options</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get SARS eFiling Support →</a></article><article class="service-card"><small>Mint service</small><h3><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Digital Marketing Support</a></h3><p>Content direction, landing-page presentation and visibility support for small businesses.</p><div class="service-proof">Audience reach across X and TikTok</div><p><strong style="color:var(--mint)">7-day support and custom options</strong></p><a class="service-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Get Digital Marketing Support →</a></article></div></div></section>
 </main>
-<section><div class="wrap"><div class="cta-panel"><h2>Ready to look more credible?</h2><p>Send a message with what you need: CV, applications, business branding, proposal design or digital support.</p><a class="btn" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance">Book on WhatsApp</a></div></div></section>
+<section><div class="wrap"><div class="cta-panel"><h2>Ready to look more credible?</h2><p>Send a message with what you need: CV, applications, business branding, proposal design or digital support.</p><a class="btn" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Book on WhatsApp</a></div></div></section>
 <footer class="footer"><div class="wrap footer-grid"><div><img class="logo-img" src="mmh-logo-header.png" alt="Mint Media House logo"><p>Digital solutions for South African job seekers and SMMEs who want to look credible, apply smarter and present better online.</p><div class="social-row"><div class="social-icon">f</div><div class="social-icon">X</div></div><div class="footer-company"><span><strong>Legal entity:</strong> IZwelabo Joyce (Pty) Ltd</span><span><strong>Registration:</strong> 2025/779154/07</span><span><strong>Email:</strong> mint@mintmediahouse.digital</span></div></div><div><h3>Pages</h3><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h3>Contact</h3><p>mint@mintmediahouse.digital</p><p>062 110 9538</p><p>@mintmedia.za</p></div></div></footer>
-<a class="float" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20need%20assistance">Chat</a>
+<a class="float" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">Chat</a>
 </body></html>
