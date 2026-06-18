@@ -301,6 +301,100 @@ nav a[href*="portfolio.html"]:hover {
   .split-flap { animation: none !important; }
 }
 
+
+/* Mint package conversion section refinement */
+.mint-packages{
+  padding:92px 24px 84px;
+  background:#080808;
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.packages-inner{max-width:1200px;margin:0 auto;}
+.section-kicker{
+  color:#57e0a3;
+  font-size:12px;
+  letter-spacing:.18em;
+  font-weight:900;
+  margin-bottom:20px;
+}
+.packages-head{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+  align-items:end;
+  margin-bottom:34px;
+}
+.packages-head h2{
+  margin:0;
+  font-size:clamp(42px,6vw,78px);
+  line-height:.92;
+  letter-spacing:-.06em;
+}
+.packages-head p{
+  margin:0 0 8px;
+  color:rgba(255,255,255,.68);
+  font-size:19px;
+  line-height:1.35;
+}
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.package-card{
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:26px;
+  padding:25px 28px 27px;
+  background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));
+  min-height:0;
+}
+.package-label{
+  color:#57e0a3;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+  margin-bottom:13px;
+}
+.package-card h3{
+  margin:0 0 8px;
+  font-size:24px;
+  line-height:1.02;
+  letter-spacing:-.03em;
+}
+.package-price{
+  font-size:34px;
+  line-height:1;
+  font-weight:950;
+  margin:0 0 15px;
+  color:#fff;
+  letter-spacing:-.04em;
+}
+.package-card p{
+  margin:0 0 22px;
+  color:rgba(255,255,255,.78);
+  font-size:16px;
+  line-height:1.42;
+}
+.package-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none !important;
+  color:#050505 !important;
+  background:#57e0a3;
+  border-radius:999px;
+  padding:13px 19px;
+  font-weight:900;
+  line-height:1;
+  box-shadow:0 12px 34px rgba(86,232,163,.14);
+}
+.package-btn:hover{transform:translateY(-1px);}
+@media(max-width:900px){
+  .packages-head,.package-grid{grid-template-columns:1fr;}
+  .mint-packages{padding:64px 18px;}
+  .package-card{padding:24px;}
+}
+
 </style>
 </head>
 <body>
@@ -421,39 +515,45 @@ nav a[href*="portfolio.html"]:hover {
       </div>
     </section>
 
-    <section 
-<section id="packages" style="padding:90px 24px;background:#080808;">
-<div style="max-width:1200px;margin:0 auto;">
-<div style="color:#57e0a3;font-size:12px;letter-spacing:.18em;font-weight:700;margin-bottom:18px;">POPULAR STARTING POINTS</div>
-<h2 style="font-size:clamp(42px,6vw,78px);line-height:.95;margin:0 0 40px;">Start with what you need.</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;">
+    
+<section id="packages" class="mint-packages">
+  <div class="packages-inner">
+    <div class="section-kicker">POPULAR STARTING POINTS</div>
+    <div class="packages-head">
+      <h2>Simple packages.<br>Clear pricing.<br>Immediate action.</h2>
+      <p>Start with a focused offer, then build from there.</p>
+    </div>
 
-<div style="border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:28px;">
-<div style="color:#57e0a3;font-size:11px;font-weight:700;">BEST VALUE</div>
-<h3>Job Seeker Bundle</h3>
-<p>CV Professional<br>5 Applications</p>
-<h2>R300</h2>
-<a href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Job%20Seeker%20Bundle.">Start on WhatsApp →</a>
-</div>
+    <div class="package-grid">
+      <article class="package-card">
+        <div class="package-label">BEST VALUE</div>
+        <h3>Job Seeker Bundle</h3>
+        <div class="package-price">R300</div>
+        <p>CV Professional<br>5 Applications</p>
+        <a class="package-btn" href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Job%20Seeker%20Bundle.">Start on WhatsApp →</a>
+      </article>
 
-<div style="border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:28px;">
-<div style="color:#57e0a3;font-size:11px;font-weight:700;">MOST POPULAR</div>
-<h3>Career Accelerator</h3>
-<p>CV Premium<br>10 Applications</p>
-<h2>R500</h2>
-<a href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Career%20Accelerator%20package.">Start on WhatsApp →</a>
-</div>
+      <article class="package-card">
+        <div class="package-label">MOST POPULAR</div>
+        <h3>Career Accelerator</h3>
+        <div class="package-price">R500</div>
+        <p>CV Premium<br>10 Applications</p>
+        <a class="package-btn" href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Career%20Accelerator%20package.">Start on WhatsApp →</a>
+      </article>
 
-<div style="border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:28px;">
-<div style="color:#57e0a3;font-size:11px;font-weight:700;">BUSINESS FAVORITE</div>
-<h3>Startup Launch</h3>
-<p>Logo Design<br>Business Profile<br>Poster Design</p>
-<h2>From R900</h2>
-<a href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Startup%20Launch%20package.">Start on WhatsApp →</a>
-</div>
+      <article class="package-card">
+        <div class="package-label">BUSINESS FAVORITE</div>
+        <h3>Startup Launch</h3>
+        <div class="package-price">From R900</div>
+        <p>Logo Design<br>Business Profile<br>Poster Design</p>
+        <a class="package-btn" href="https://wa.me/27621109538?text=Hi%20Mint,%20I'm%20interested%20in%20the%20Startup%20Launch%20package.">Start on WhatsApp →</a>
+      </article>
+    </div>
+  </div>
+</section>
 
-</div></div></section>
-id="proof">
+<section 
+
       <div class="wrap">
         <div class="section-head">
           <div><span class="section-kicker">Proof, not promises</span><h2>Real assets. Real use cases.</h2></div>
