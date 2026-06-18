@@ -578,6 +578,61 @@ a[href*="api.whatsapp"]:hover::after,
   }
 }
 
+
+/* Mint V Authority Polish — Projects tabs + split-flap metrics */
+nav a[href*="#work"],
+nav a[href*="bt-logistix"],
+nav a[href*="portfolio"],
+nav a[href*="portfolio.html"],
+.special-tab,
+.projects-tab,
+.portfolio-tab {
+  border: 1px solid rgba(86,232,163,.24);
+  border-radius: 999px;
+  padding: 10px 15px !important;
+  background: rgba(86,232,163,.045);
+}
+nav a[href*="#work"]:hover,
+nav a[href*="bt-logistix"]:hover,
+nav a[href*="portfolio"]:hover,
+nav a[href*="portfolio.html"]:hover {
+  background: rgba(86,232,163,.12);
+}
+
+.split-flap {
+  display: inline-block;
+  position: relative;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.04em;
+  transform-origin: center;
+  animation: mintSplitFlap .95s cubic-bezier(.2,.7,.2,1) both;
+}
+.split-flap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1px solid rgba(255,255,255,.22);
+  opacity: .55;
+}
+.split-flap:nth-child(1){animation-delay:.05s}
+.split-flap:nth-child(2){animation-delay:.16s}
+.split-flap:nth-child(3){animation-delay:.27s}
+.split-flap:nth-child(4){animation-delay:.38s}
+.split-flap:nth-child(5){animation-delay:.49s}
+
+@keyframes mintSplitFlap {
+  0% { transform: perspective(500px) rotateX(-86deg); filter: brightness(.6); opacity: .25; }
+  48% { transform: perspective(500px) rotateX(18deg); filter: brightness(1.22); opacity: 1; }
+  72% { transform: perspective(500px) rotateX(-8deg); }
+  100% { transform: perspective(500px) rotateX(0deg); filter: brightness(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-flap { animation: none !important; }
+}
+
 </style></head><body>
 <div class="ticker"><div><b>Combo Specials</b> CV + Applications <b>•</b> SMME Branding <b>•</b> Proposal Design <b>•</b> Digital Support <b>•</b> Search Mint Media House</div></div>
 <header><div class="wrap nav">

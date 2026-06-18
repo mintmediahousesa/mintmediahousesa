@@ -147,12 +147,67 @@ a[href*="api.whatsapp"]:hover::after,
 @media(max-width:980px){.doc-grid.four-docs{grid-template-columns:repeat(2,1fr)}.final-cta{padding:34px!important}}
 @media(max-width:620px){.signal-row.clean-tags{gap:8px!important}.signal-row.clean-tags span{font-size:11px;padding:10px 12px}.doc-grid.four-docs{grid-template-columns:1fr}.final-cta{border-radius:30px!important;padding:28px!important}.final-cta h2{font-size:44px!important}}
 
+
+/* Mint V Authority Polish — Projects tabs + split-flap metrics */
+nav a[href*="#work"],
+nav a[href*="bt-logistix"],
+nav a[href*="portfolio"],
+nav a[href*="portfolio.html"],
+.special-tab,
+.projects-tab,
+.portfolio-tab {
+  border: 1px solid rgba(86,232,163,.24);
+  border-radius: 999px;
+  padding: 10px 15px !important;
+  background: rgba(86,232,163,.045);
+}
+nav a[href*="#work"]:hover,
+nav a[href*="bt-logistix"]:hover,
+nav a[href*="portfolio"]:hover,
+nav a[href*="portfolio.html"]:hover {
+  background: rgba(86,232,163,.12);
+}
+
+.split-flap {
+  display: inline-block;
+  position: relative;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.04em;
+  transform-origin: center;
+  animation: mintSplitFlap .95s cubic-bezier(.2,.7,.2,1) both;
+}
+.split-flap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1px solid rgba(255,255,255,.22);
+  opacity: .55;
+}
+.split-flap:nth-child(1){animation-delay:.05s}
+.split-flap:nth-child(2){animation-delay:.16s}
+.split-flap:nth-child(3){animation-delay:.27s}
+.split-flap:nth-child(4){animation-delay:.38s}
+.split-flap:nth-child(5){animation-delay:.49s}
+
+@keyframes mintSplitFlap {
+  0% { transform: perspective(500px) rotateX(-86deg); filter: brightness(.6); opacity: .25; }
+  48% { transform: perspective(500px) rotateX(18deg); filter: brightness(1.22); opacity: 1; }
+  72% { transform: perspective(500px) rotateX(-8deg); }
+  100% { transform: perspective(500px) rotateX(0deg); filter: brightness(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-flap { animation: none !important; }
+}
+
 </style>
 </head>
 <body>
   <div class="topline"><span><b>Mint Media House</b> Selected Work <b>BT Logistix</b> Website <b>Documents</b> Quotation framework <b>Service request system</b></span></div>
   <header><div class="wrap nav"><a class="brand" href="index.html"><img src="mmh-logo-header.png" alt="Mint Media House logo"></a><nav aria-label="Primary navigation"><a href="index.html#about">About</a>
-        <a href="index.html#work">Work</a><a href="index.html#build">Services</a><a href="index.html#proof">Proof</a><a class="active" href="portfolio.html" aria-current="page">Portfolio</a><a class="nav-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">💬 Let’s talk</a></nav></div></header>
+        <a href="index.html#work">PROJECTS</a><a href="index.html#build">Services</a><a href="index.html#proof">Proof</a><a class="active" href="portfolio.html" aria-current="page">Portfolio</a><a class="nav-cta" href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">💬 Let’s talk</a></nav></div></header>
   <main>
     <section class="page-hero"><div class="wrap"><div class="eyebrow">Portfolio • selected work</div><h1>Proof that can be opened, sent and used.</h1><p>Mint's work is not just visual. It turns small businesses into cleaner, more credible operators with documents, websites and systems that support real conversations.</p></div></section>
     <section id="bt-logistix"><div class="wrap"><div class="section-head"><div><span class="section-kicker">Selected Work</span><h2>BT Logistix credibility system.</h2></div><p>A full business-facing package: website identity, catalogue assets, pricing guide, service request form and quotation framework.</p></div><article class="case-showcase"><div class="case-info"><span class="project-label">BT Logistix • logistics & supply</span><h2>From operator to credible logistics brand.</h2><p>Mint shaped BT into a business that can receive quote requests, present services, send documents and look serious before the first WhatsApp conversation.</p><div class="deliverables"><span>Website system</span><span>Capability statement</span><span>Catalogue assets</span><span>Service request form</span><span>Quotation card</span><span>Operational positioning</span></div><div class="actions"><a class="btn primary" href="https://b-tlogistix.vercel.app" target="_blank" rel="noopener">Visit BT Logistix</a><a class="btn secondary" href="#documents">View documents</a></div></div><div class="case-visual"><a class="mock" href="https://b-tlogistix.vercel.app" target="_blank" rel="noopener"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"><span class="bt-visit-note">Visit BT →</span></a><a class="mock" href="https://b-tlogistix.vercel.app" target="_blank" rel="noopener"><img src="bt-cleaning-supplies.png" alt="BT Logistix cleaning supplies catalogue"><span class="bt-visit-note">Open BT →</span></a></div></article></div></section>
