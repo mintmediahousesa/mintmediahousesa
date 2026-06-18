@@ -217,6 +217,35 @@ footer{position:relative;margin-top:70px;background:linear-gradient(180deg,#070a
 @media(max-width:620px){.topline{height:28px}.topline span{font-size:9px}.nav{padding:10px 0 12px!important;align-items:center!important}.brand img{width:96px!important;max-height:42px!important}nav{gap:8px!important;row-gap:8px!important;max-width:235px;justify-content:flex-end!important}nav a{font-size:8.8px!important;letter-spacing:.08em!important}.nav-cta{padding:9px 10px!important}.hero{padding:34px 0 30px!important}.hero-grid{gap:26px!important}h1{font-size:clamp(48px,16.5vw,66px)!important;line-height:.86!important;margin-bottom:20px!important}.hero-copy{font-size:16.5px!important;line-height:1.38!important;margin-bottom:24px!important}.actions{gap:10px!important}.btn{min-height:52px;padding:14px 18px!important}.studio-card{margin-top:4px!important;padding:24px!important;border-radius:28px!important}.studio-card h2{font-size:clamp(31px,10vw,42px)!important}.studio-card p{font-size:15.5px!important;line-height:1.42!important}.signal-row.clean-tags{grid-template-columns:1fr!important}.signal-row.clean-tags span{min-height:auto!important}.about-panel{border-radius:28px;padding:26px 22px}.about-panel h2{font-size:39px}.about-panel p{font-size:16.5px;line-height:1.48}.about-strip span{font-size:10px;padding:9px 11px}.case-info,.build-card,.proof-card,.snap-card{border-radius:26px!important}.case-info{padding:24px!important}.case-info h3{font-size:32px!important;line-height:1!important}.deliverables{gap:8px!important}.deliverables span{font-size:11px!important;padding:10px 11px!important}.case-visual{min-height:380px!important;padding:16px!important}.mock{width:88%!important}.mock.second{width:82%!important;margin-top:14px!important}.section-head{margin-bottom:24px!important}.section-head h2{font-size:38px!important;line-height:.95!important}.section-head p{font-size:16px!important}.build-grid{gap:14px!important}.proof-grid{gap:18px!important}.proof-card img{height:220px!important}.snapshot{gap:14px!important}.snap-intro h2{font-size:36px!important}.final-cta{padding:30px 24px!important}.final-cta h2{font-size:43px!important;line-height:.9!important}.final-cta p{font-size:16px!important}footer{margin-top:44px!important;border-top-left-radius:30px!important;border-top-right-radius:30px!important;padding:42px 0 88px!important}.footer-grid{gap:22px!important}footer img{width:132px!important}}
 @media(max-width:420px){nav{max-width:220px}.brand img{width:88px!important}nav a{font-size:8.2px!important}.hero-copy{font-size:15.8px!important}.studio-card{padding:22px 18px!important}.case-visual{min-height:340px!important}.about-panel h2{font-size:35px}.final-cta h2{font-size:38px!important}}
 
+
+/* Mint BT case study visual lead */
+.case-study-pulse {
+  position: relative;
+  animation: mintCaseStudyBreath 2.8s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(86,232,163,.36);
+}
+.case-study-pulse::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: inherit;
+  border: 1px solid rgba(86,232,163,.36);
+  opacity: 0;
+  animation: mintCaseStudyRing 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes mintCaseStudyBreath {
+  0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 0 0 0 rgba(86,232,163,.16); }
+  50% { transform: translateY(-2px) scale(1.018); box-shadow: 0 14px 36px rgba(86,232,163,.20); }
+}
+@keyframes mintCaseStudyRing {
+  0%, 100% { opacity: 0; transform: scale(.98); }
+  45% { opacity: .8; transform: scale(1.025); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .case-study-pulse, .case-study-pulse::before { animation: none !important; }
+}
+
 </style>
 </head>
 <body>
@@ -286,11 +315,11 @@ footer{position:relative;margin-top:70px;background:linear-gradient(180deg,#070a
             <div class="deliverables">
               <span>Website system</span><span>Capability statement</span><span>Product catalogue</span><span>Quote workflow</span><span>Service request form</span><span>Operational positioning</span>
             </div>
-            <div class="actions"><a class="btn primary" href="bt-logistix.html" target="_blank" rel="noopener">View Case Study Logistix</a><a class="btn secondary" href="portfolio.html#bt-logistix">View case study</a></div>
+            <div class="actions"><a class="btn primary case-study-pulse" href="bt-logistix.html" target="_blank" rel="noopener">View Case Study Logistix</a><a class="btn secondary" href="portfolio.html#bt-logistix">View case study</a></div>
           </div>
           <div class="case-visual" aria-label="BT Logistix visual proof">
-            <a class="mock" href="bt-logistix.html" target="_blank" rel="noopener"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"><span class="bt-visit-note">View Case Study →</span></a>
-            <a class="mock second" href="bt-logistix.html" target="_blank" rel="noopener"><img src="bt-cleaning-supplies.png" alt="BT Logistix catalogue design"><span class="bt-visit-note">Open BT →</span></a>
+            <a class="mock case-study-pulse" href="bt-logistix.html" target="_blank" rel="noopener"><img src="bt-industrial-proposal.png" alt="BT Logistix proposal design"><span class="bt-visit-note">View Case Study →</span></a>
+            <a class="mock second case-study-pulse" href="bt-logistix.html" target="_blank" rel="noopener"><img src="bt-cleaning-supplies.png" alt="BT Logistix catalogue design"><span class="bt-visit-note">Open BT →</span></a>
           </div>
         </article>
       </div>
