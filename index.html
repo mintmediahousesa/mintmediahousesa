@@ -547,6 +547,56 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   .package-card { padding: 22px !important; border-radius: 22px !important; }
 }
 
+
+/* Mobile navigation cleanup */
+@media (max-width: 768px){
+  header nav,
+  .nav-links,
+  .navbar-nav{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(120px,1fr)) !important;
+    gap:12px !important;
+    width:100% !important;
+    margin:0 auto 20px !important;
+    justify-items:center !important;
+  }
+
+  header nav a,
+  .nav-links a,
+  .navbar-nav a{
+    width:100% !important;
+    text-align:center !important;
+  }
+
+  .logo img,
+  header img{
+    display:block !important;
+    margin:0 auto 18px !important;
+    max-width:140px !important;
+  }
+
+  .hero,
+  .hero-section{
+    padding-top:24px !important;
+  }
+
+  .hero h1{
+    font-size:clamp(54px,14vw,72px) !important;
+  }
+
+  .hero .cta-group,
+  .hero-buttons{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:14px !important;
+  }
+
+  .hero .cta-group a,
+  .hero-buttons a{
+    width:100% !important;
+  }
+}
+
 </style>
 </head>
 <body>
