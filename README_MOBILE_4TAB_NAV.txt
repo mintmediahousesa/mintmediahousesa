@@ -1,0 +1,1 @@
+Mobile hides ABOUT and header WhatsApp CTA only. Keeps Projects, Services, Proof, Portfolio. Adds floating WhatsApp button. Desktop unchanged.
