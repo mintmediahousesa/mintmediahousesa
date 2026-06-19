@@ -531,14 +531,14 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
 }
 
 
-/* Mint Mobile 3-Tab Nav: Projects / Services / Portfolio */
+/* Mint Mobile 3 Tabs Inline — Projects / Services / Portfolio */
 @media (max-width:760px){
   header,.site-header{
     display:flex!important;
     justify-content:space-between!important;
-    align-items:flex-start!important;
-    gap:14px!important;
-    padding:18px 18px 20px!important;
+    align-items:center!important;
+    gap:12px!important;
+    padding:18px 16px 20px!important;
   }
 
   .logo,.brand{
@@ -547,39 +547,40 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   }
 
   .logo img,.brand img,header img{
-    max-width:112px!important;
+    max-width:102px!important;
     display:block!important;
   }
 
   nav,.nav-links{
-    flex:0 0 auto!important;
+    flex:1 1 auto!important;
     width:auto!important;
     display:flex!important;
-    flex-direction:column!important;
-    gap:10px!important;
-    justify-content:flex-start!important;
-    align-items:flex-end!important;
+    flex-direction:row!important;
+    gap:7px!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
     margin-left:auto!important;
+    flex-wrap:nowrap!important;
   }
 
   nav a,.nav-links a{
-    min-width:150px!important;
-    min-height:38px!important;
+    min-width:0!important;
+    width:auto!important;
+    min-height:36px!important;
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
     text-align:center!important;
-    font-size:12px!important;
+    font-size:10px!important;
     line-height:1!important;
-    letter-spacing:.11em!important;
-    padding:9px 14px!important;
+    letter-spacing:.07em!important;
+    padding:9px 10px!important;
     border-radius:999px!important;
     white-space:nowrap!important;
     opacity:1!important;
     visibility:visible!important;
   }
 
-  /* Hide ABOUT and PROOF on mobile only */
   header nav a[href*="#about"], header nav a[href*="about.html"],
   .site-header nav a[href*="#about"], .site-header nav a[href*="about.html"],
   .nav-links a[href*="#about"], .nav-links a[href*="about.html"],
@@ -589,7 +590,6 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
     display:none!important;
   }
 
-  /* Hide header WhatsApp CTA on mobile only */
   header .nav-cta,.site-header .nav-cta,
   header nav a[href*="wa.me"],header nav a[href*="whatsapp"],
   .site-header nav a[href*="wa.me"],.site-header nav a[href*="whatsapp"]{
@@ -617,6 +617,12 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   font-weight:900;
   box-shadow:0 14px 38px rgba(86,232,163,.28);
   border:1px solid rgba(255,255,255,.18);
+}
+
+@media (max-width:380px){
+  .logo img,.brand img,header img{max-width:92px!important;}
+  nav,.nav-links{gap:5px!important;}
+  nav a,.nav-links a{font-size:9px!important;padding:8px 8px!important;letter-spacing:.05em!important;}
 }
 
 </style>
