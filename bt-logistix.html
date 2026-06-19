@@ -531,32 +531,92 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
 }
 
 
+/* Mint Mobile 3-Tab Nav: Projects / Services / Portfolio */
 @media (max-width:760px){
-header,.site-header{
-display:flex!important;
-justify-content:space-between!important;
-align-items:flex-start!important;
-gap:12px!important;
+  header,.site-header{
+    display:flex!important;
+    justify-content:space-between!important;
+    align-items:flex-start!important;
+    gap:14px!important;
+    padding:18px 18px 20px!important;
+  }
+
+  .logo,.brand{
+    flex:0 0 auto!important;
+    margin-right:auto!important;
+  }
+
+  .logo img,.brand img,header img{
+    max-width:112px!important;
+    display:block!important;
+  }
+
+  nav,.nav-links{
+    flex:0 0 auto!important;
+    width:auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    gap:10px!important;
+    justify-content:flex-start!important;
+    align-items:flex-end!important;
+    margin-left:auto!important;
+  }
+
+  nav a,.nav-links a{
+    min-width:150px!important;
+    min-height:38px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    font-size:12px!important;
+    line-height:1!important;
+    letter-spacing:.11em!important;
+    padding:9px 14px!important;
+    border-radius:999px!important;
+    white-space:nowrap!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  /* Hide ABOUT and PROOF on mobile only */
+  header nav a[href*="#about"], header nav a[href*="about.html"],
+  .site-header nav a[href*="#about"], .site-header nav a[href*="about.html"],
+  .nav-links a[href*="#about"], .nav-links a[href*="about.html"],
+  header nav a[href*="#proof"],
+  .site-header nav a[href*="#proof"],
+  .nav-links a[href*="#proof"]{
+    display:none!important;
+  }
+
+  /* Hide header WhatsApp CTA on mobile only */
+  header .nav-cta,.site-header .nav-cta,
+  header nav a[href*="wa.me"],header nav a[href*="whatsapp"],
+  .site-header nav a[href*="wa.me"],.site-header nav a[href*="whatsapp"]{
+    display:none!important;
+  }
+
+  .mint-floating-whatsapp{display:flex!important;}
 }
-.logo,.brand{
-flex:0 0 auto!important;
-margin-right:auto!important;
-}
-.logo img,.brand img,header img{
-max-width:110px!important;
-}
-nav,.nav-links{
-width:auto!important;
-display:grid!important;
-grid-template-columns:repeat(2,auto)!important;
-gap:10px!important;
-justify-content:end!important;
-justify-items:end!important;
-margin-left:auto!important;
-}
-nav a,.nav-links a{
-min-width:120px!important;
-}
+
+.mint-floating-whatsapp{
+  position:fixed;
+  right:16px;
+  bottom:18px;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:58px;
+  height:58px;
+  border-radius:999px;
+  background:#57e0a3;
+  color:#050505;
+  text-decoration:none;
+  font-size:25px;
+  font-weight:900;
+  box-shadow:0 14px 38px rgba(86,232,163,.28);
+  border:1px solid rgba(255,255,255,.18);
 }
 
 </style>
