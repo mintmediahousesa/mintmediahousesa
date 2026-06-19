@@ -735,6 +735,35 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   border:1px solid rgba(255,255,255,.18);
 }
 
+
+@media (max-width:760px){
+header,.site-header{
+display:flex!important;
+justify-content:space-between!important;
+align-items:flex-start!important;
+gap:12px!important;
+}
+.logo,.brand{
+flex:0 0 auto!important;
+margin-right:auto!important;
+}
+.logo img,.brand img,header img{
+max-width:110px!important;
+}
+nav,.nav-links{
+width:auto!important;
+display:grid!important;
+grid-template-columns:repeat(2,auto)!important;
+gap:10px!important;
+justify-content:end!important;
+justify-items:end!important;
+margin-left:auto!important;
+}
+nav a,.nav-links a{
+min-width:120px!important;
+}
+}
+
 </style>
 </head>
 <body>
