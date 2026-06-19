@@ -1002,6 +1002,30 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   nav a,.nav-links a{font-size:9px!important;padding:8px 8px!important;letter-spacing:.05em!important;}
 }
 
+
+/* Mint Sticky Header */
+header,
+.site-header{
+position:sticky!important;
+top:0!important;
+z-index:1000!important;
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+background:rgba(8,8,8,.78)!important;
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+body{
+scroll-padding-top:90px;
+}
+
+@media (max-width:760px){
+header,
+.site-header{
+background:rgba(8,8,8,.88)!important;
+}
+}
+
 </style><style>
 
 /* Mint Mobile Header Real Fix — logo left, 3 tabs right, one line */
