@@ -658,6 +658,113 @@ header .active, header nav a.active{color:#56e8a3!important;border-bottom:2px so
 }
 </style>
 
+<style>
+
+/* Mint Mobile Header Real Fix — logo left, 3 tabs right, one line */
+@media (max-width:760px){
+  html,body{overflow-x:hidden!important;}
+
+  header,.site-header{
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:8px!important;
+    padding:16px 14px!important;
+    min-height:auto!important;
+  }
+
+  .brand,.logo,header > a:first-child,.site-header > a:first-child{
+    flex:0 0 82px!important;
+    width:82px!important;
+    max-width:82px!important;
+    margin:0!important;
+  }
+
+  .brand img,.logo img,header > a:first-child img,.site-header > a:first-child img,header img{
+    width:82px!important;
+    max-width:82px!important;
+    height:auto!important;
+    display:block!important;
+    margin:0!important;
+  }
+
+  header nav,.site-header nav,.nav-links{
+    flex:1 1 auto!important;
+    width:auto!important;
+    min-width:0!important;
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:5px!important;
+    margin:0!important;
+    overflow:visible!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  header nav a,.site-header nav a,.nav-links a{
+    flex:0 1 auto!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    min-height:34px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:8px 8px!important;
+    font-size:9px!important;
+    line-height:1!important;
+    letter-spacing:.045em!important;
+    white-space:nowrap!important;
+    border-radius:999px!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  header nav a[href*="#about"],header nav a[href*="about.html"],
+  .site-header nav a[href*="#about"],.site-header nav a[href*="about.html"],
+  .nav-links a[href*="#about"],.nav-links a[href*="about.html"],
+  header nav a[href*="#proof"],.site-header nav a[href*="#proof"],.nav-links a[href*="#proof"],
+  header .nav-cta,.site-header .nav-cta,
+  header nav a[href*="wa.me"],header nav a[href*="whatsapp"],
+  .site-header nav a[href*="wa.me"],.site-header nav a[href*="whatsapp"]{
+    display:none!important;
+  }
+
+  .mint-floating-whatsapp{display:flex!important;}
+}
+
+@media (max-width:390px){
+  .brand,.logo,header > a:first-child,.site-header > a:first-child{flex-basis:74px!important;width:74px!important;max-width:74px!important;}
+  .brand img,.logo img,header > a:first-child img,.site-header > a:first-child img,header img{width:74px!important;max-width:74px!important;}
+  header nav,.site-header nav,.nav-links{gap:4px!important;}
+  header nav a,.site-header nav a,.nav-links a{font-size:8.5px!important;padding:7px 6px!important;letter-spacing:.035em!important;}
+}
+
+.mint-floating-whatsapp{
+  position:fixed;
+  right:16px;
+  bottom:18px;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:58px;
+  height:58px;
+  border-radius:999px;
+  background:#57e0a3;
+  color:#050505;
+  text-decoration:none;
+  font-size:25px;
+  font-weight:900;
+  box-shadow:0 14px 38px rgba(86,232,163,.28);
+  border:1px solid rgba(255,255,255,.18);
+}
+
+</style>
 </head>
 <body>
 
