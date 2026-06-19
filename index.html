@@ -830,6 +830,48 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
   nav a,.nav-links a{font-size:9px!important;padding:8px 8px!important;letter-spacing:.05em!important;}
 }
 
+
+/* Mint Final Polish — Portfolio separation + mobile tightening */
+@media (max-width:760px){
+  section{padding-top:58px!important;padding-bottom:58px!important;}
+  .card,.proof-card,.package-card,article{
+    margin-bottom:14px!important;
+  }
+  .package-btn,.btn,.btn-case,a[href*="wa.me"]{
+    min-height:50px!important;
+  }
+  footer,.footer{
+    padding-top:48px!important;
+    padding-bottom:48px!important;
+  }
+}
+
+/* Portfolio separation */
+#portfolio{
+  border-top:1px solid rgba(86,232,163,.12);
+  background:
+    radial-gradient(circle at 80% 10%, rgba(86,232,163,.07), transparent 30%),
+    #080808;
+}
+
+/* Featured project authority */
+.featured-project-label,
+.project-label{
+  color:#57e0a3;
+  font-size:12px;
+  letter-spacing:.18em;
+  font-weight:900;
+  text-transform:uppercase;
+}
+
+/* Footer authority */
+.footer-authority{
+  margin-top:18px;
+  color:rgba(255,255,255,.55);
+  font-size:13px;
+  line-height:1.5;
+}
+
 </style>
 <style>
 
@@ -1176,7 +1218,8 @@ img, video, canvas, svg { max-width: 100%; height: auto; }
       <div><h3>Explore</h3><a href="#about">About</a><a href="#work">Selected Work</a><a href="#build">Services</a><a href="#proof">Proof</a><a href="portfolio.html">Portfolio</a></div>
       <div><h3>Contact</h3><a href="mailto:mint@mintmediahouse.digital">mint@mintmediahouse.digital</a><a href="https://wa.me/27621109538?text=Hi%20Mint%20Media%20House%2C%20I%20would%20like%20help%20with%20a%20service.">WhatsApp Mint</a><p>South Africa</p></div>
     </div>
-  </footer>
+  <div class="footer-authority">Registered South African business • Operating since 2025</div>
+</footer>
 
   <script>
     (() => {
